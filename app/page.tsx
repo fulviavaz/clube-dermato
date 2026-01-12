@@ -92,53 +92,136 @@ export default function Page() {
         </div>
       </header>
 
-      <main className="flex-1">
-        <section className="container-xl py-10">
-          <h2 className="text-center text-lg font-extrabold">Quem já faz parte</h2>
-          <p className="mt-1 text-center text-xs text-primary/70">
+      <main className="flex-1 bg-white">
+        <section className="container-xl py-16">
+          <h2 className="text-center text-3xl font-extrabold text-black">Quem já faz parte</h2>
+          <p className="mt-1 text-center text-lg text-black">
             Dermatologistas que apostam em uma experiência mais organizada e personalizada.
           </p>
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
             {Array.from({ length: 7 }).map((_, i) => (
-              <div key={i} className="rounded-full border border-primary/10 bg-white/70 px-4 py-2 shadow-sm">
+              <div key={i} className="rounded-lg bg-[#f1e8ef] px-2 py-2 shadow-sm">
                 <Image src="/logo-renata.png" alt="Renata Mitelman" width={220} height={44} className="h-[22px] w-auto" />
               </div>
             ))}
           </div>
         </section>
 
-        <section className="bg-white/35" id="plataforma">
-          <div className="container-xl py-12">
+        <section className="bg-base py-16" id="plataforma">
+          <div className="container-xl ">
             <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
-              <div className="lg:col-span-5">
-                <h3 className="text-2xl font-extrabold">Por que é bom para sua clínica</h3>
-                <p className="mt-3 text-sm leading-relaxed text-primary/75">
+              <div className="lg:col-span-4">
+                <h3 className="text-3xl font-extrabold text-black">Por que é bom para sua clínica</h3>
+                <p className="mt-3 text-lg leading-relaxed text-black">
                   O Club Dermato Care permite criar e gerenciar campanhas de forma estratégica,
                   com ferramentas que aumentam a fidelização e fortalecem o relacionamento com seus pacientes.
                 </p>
                 <div className="mt-6">
-                  <a
-                    href="#demonstracao"
-                    className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-[11px] font-bold tracking-widest text-base shadow-sm hover:opacity-95"
+                  <a href="#demonstracao"
+                    className="inline-flex items-center justify-center rounded-full bg-primary px-12 py-3 text-[11px] tracking-widest text-base shadow-sm hover:opacity-95"
                   >
-                    ENTENDA SUA ESTRATÉGIA
+                    OTIMIZE SUA ESTRATÉGIA
                   </a>
                 </div>
               </div>
 
-              <div className="lg:col-span-7">
-                <div className="grid gap-3 sm:grid-cols-2">
-                  {clinicCards.map((f) => (
-                    <div key={f.title} className="flex items-start gap-3 rounded-2xl bg-primary px-4 py-4 text-base shadow-sm">
-                      <div className="grid h-10 w-10 place-items-center rounded-xl bg-secondary/35">
-                        <Image src={f.icon} alt="" width={24} height={24} className="h-5 w-5" />
-                      </div>
-                      <p className="text-sm font-bold leading-snug">{f.title}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
+            <div className="lg:col-span-8">
+  <div className="grid gap-4 lg:grid-cols-12">
+    {/* COLUNA ESQUERDA (2 cards quadrados/verticais) */}
+    <div className="grid gap-4 lg:col-span-4">
+      {/* 1 - Roxo escuro */}
+      <div className="rounded-3xl bg-primary p-6 text-base shadow-sm text-center place-items-center">
+        <div className="grid h-14 w-14 place-items-center">
+          <Image
+            src="/icone-fluxos.png"
+            alt=""
+            width={73}
+            height={73}
+            className="h-[73px] w-[73px]"
+          />
+        </div>
+        <p className="mt-5 text-lg font-normal leading-snug">
+          Fluxos claros <br /> e centralizados
+        </p>
+      </div>
+
+      {/* 2 - Lilás */}
+      <div className="rounded-3xl bg-secondary p-6 text-white shadow-sm">
+        <div className="grid h-14 w-14 place-items-center rounded-2xl bg-white/15">
+          <Image
+            src="/icone-reducao.png"
+            alt=""
+            width={34}
+            height={34}
+            className="h-8 w-8"
+          />
+        </div>
+        <p className="mt-5 text-lg font-semibold leading-snug">
+          Redução de <br /> retrabalhos
+        </p>
+      </div>
+    </div>
+
+    {/* COLUNA DIREITA (3 cards retangulares) */}
+    <div className="grid gap-4 lg:col-span-8">
+      {/* Lilás */}
+      <div className="rounded-3xl bg-secondary p-6 text-white shadow-sm">
+        <div className="flex items-center gap-4">
+          <div className="grid h-14 w-14 place-items-center rounded-2xl bg-white/15">
+            <Image
+              src="/icone-calendario.png"
+              alt=""
+              width={34}
+              height={34}
+              className="h-8 w-8"
+            />
+          </div>
+          <p className="text-lg font-semibold leading-snug">
+            Mais organização no <br /> dia a dia
+          </p>
+        </div>
+      </div>
+
+      {/* Roxo escuro */}
+      <div className="rounded-3xl bg-primary p-6 text-base shadow-sm">
+        <div className="flex items-center gap-4">
+          <div className="grid h-14 w-14 place-items-center rounded-2xl bg-white/10">
+            <Image
+              src="/icone-planejamento.png"
+              alt=""
+              width={34}
+              height={34}
+              className="h-8 w-8"
+            />
+          </div>
+          <p className="text-lg font-semibold leading-snug">
+            Planejamento estratégico <br /> de comunicação
+          </p>
+        </div>
+      </div>
+
+      {/* Lilás */}
+      <div className="rounded-3xl bg-secondary p-6 text-white shadow-sm">
+        <div className="flex items-center gap-4">
+          <div className="grid h-14 w-14 place-items-center rounded-2xl bg-white/15">
+            <Image
+              src="/icone-autonomia.png"
+              alt=""
+              width={34}
+              height={34}
+              className="h-8 w-8"
+            />
+          </div>
+          <p className="text-lg font-semibold leading-snug">
+            Autonomia sem depender <br /> de equipe grande
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
             </div>
           </div>
         </section>
