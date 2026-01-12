@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --color-primary: #620b68;
+  --color-secondary: #c891d1;
+  --color-base: #f5eff5;
+}
+
+html, body { height: 100%; }
+
+body{
+  @apply bg-base text-primary antialiased;
+}
+
+.container-xl{
+  @apply mx-auto w-full max-w-6xl px-6;
+}
