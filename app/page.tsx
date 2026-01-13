@@ -296,8 +296,8 @@ export default function Page() {
         <section className="container-xl pb-14">
           <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
             <div className="lg:col-span-6">
-              <h3 className="text-2xl font-extrabold">Por que é bom para o seu cliente</h3>
-              <ul className="mt-4 space-y-2 text-sm text-primary/75">
+              <h3 className="text-4xl font-extrabold text-black">Por que é bom para o seu cliente</h3>
+              <ul className="mt-4 space-y-2 text-lg text-black">
                 <li>• Comunicação mais clara e consistente;</li>
                 <li>• Acesso fácil a informações;</li>
                 <li>• Experiência organizada e personalizada;</li>
@@ -305,55 +305,80 @@ export default function Page() {
               </ul>
 
               <div className="mt-6">
-                <a href="#demonstracao" className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-[11px] font-bold tracking-widest text-base shadow-sm hover:opacity-95">
+                <a href="#demonstracao" className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-[14px] font-normal tracking-widest text-base shadow-sm hover:opacity-95">
                   CONECTE DADOS E RELACIONAMENTO
                 </a>
               </div>
             </div>
 
             <div className="lg:col-span-6">
-              <div className="overflow-hidden rounded-3xl bg-white/55 p-3 shadow-sm ring-1 ring-primary/10">
+              <div className="overflow-hidden rounded-3xl">
                 <Image src="/imagem-consulta.png" alt="Consulta" width={1200} height={800} className="w-full rounded-2xl object-cover" />
               </div>
             </div>
           </div>
         </section>
 
-        <section className="bg-white/35">
-          <div className="container-xl py-14">
-            <h3 className="text-2xl font-extrabold">Features para o paciente</h3>
-            <p className="mt-3 max-w-3xl text-sm leading-relaxed text-primary/75">
-              As funcionalidades destinadas aos clientes oferecem uma jornada mais organizada e engajada,
-              reunindo recursos que facilitam o acompanhamento de tratamentos, o acesso a benefícios e a
-              interação direta com a clínica.
-            </p>
+      <section className="bg-base">
+  <div className="container-xl py-16">
+    {/* título fora do card */}
+    <h3 className="text-4xl font-extrabold text-black">
+      Features para o paciente
+    </h3>
 
-            <div className="mt-8 rounded-3xl bg-secondary/70 p-6 shadow-sm ring-1 ring-primary/10">
-              <div className="grid gap-6 lg:grid-cols-12 lg:items-center">
-                <div className="lg:col-span-5">
-                  <div className="flex items-center justify-between">
-                    <button aria-label="Anterior" className="grid h-10 w-10 place-items-center rounded-full bg-base/70 ring-1 ring-primary/10">
-                      <Image src="/seta-esquerda.png" alt="" width={20} height={20} className="h-5 w-5" />
-                    </button>
-                    <button aria-label="Próximo" className="grid h-10 w-10 place-items-center rounded-full bg-base/70 ring-1 ring-primary/10">
-                      <Image src="/seta-direita.png" alt="" width={20} height={20} className="h-5 w-5" />
-                    </button>
-                  </div>
+    <p className="mt-4  text-lg leading-relaxed text-black">
+      As funcionalidades destinadas aos clientes oferecem uma jornada mais organizada e engajada,
+      reunindo recursos que facilitam o acompanhamento de tratamentos, o acesso a benefícios e a
+      interação direta com a clínica.
+    </p>
 
-                  <p className="mt-5 text-[11px] font-extrabold tracking-widest text-primary/80">PERFIL/NÍVEL/PONTOS</p>
-                  <p className="mt-3 text-sm text-primary/75">
-                    Menu completo com informações para os usuários consultarem sobre seu perfil, nível alcançado e
-                    pontuação acumulada.
-                  </p>
-                </div>
+  {/* CARD */}
+<div className="relative mt-32 h-[420px] rounded-[40px] bg-secondary px-16 py-16 overflow-visible">
+  {/* seta esquerda */}
+  <button
+    aria-label="Anterior"
+    className="absolute left-8 top-1/2 -translate-y-1/2 z-20"
+  >
+    <Image src="/seta-esquerda.png" alt="" width={57} height={57} />
+  </button>
 
-                <div className="lg:col-span-7">
-                  <Image src="/mobile.png" alt="App" width={1200} height={800} className="w-full rounded-2xl" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+  {/* seta direita */}
+  <button
+    aria-label="Próximo"
+    className="absolute right-8 top-1/2 -translate-y-1/2 z-20"
+  >
+    <Image src="/seta-direita.png" alt="" width={57} height={57} />
+  </button>
+
+  {/* TEXTO (continua no fluxo normal) */}
+  <div className="max-w-md pl-12">
+    <p className="text-2xl font-extrabold tracking-widest text-white">
+      PERFIL/NÍVEL/PONTOS
+    </p>
+
+    <p className="mt-6 text-xl leading-relaxed text-white">
+      Menu completo com informações para os usuários consultarem sobre seu perfil,
+      nível alcançado e pontuação acumulada.
+    </p>
+  </div>
+
+  {/* MOBILE (absolute, controlado) */}
+  <div className="absolute right-28 top-1/3 -translate-y-1/2">
+    <Image
+      src="/mobile.png"
+      alt="Aplicativo do paciente"
+      width={260}
+      height={530}
+      priority
+      className="drop-shadow-2xl"
+    />
+  </div>
+</div>
+
+            
+  </div>
+</section>
+
 
         <section className="container-xl py-14">
           <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
