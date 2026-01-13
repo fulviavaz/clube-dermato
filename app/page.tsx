@@ -132,13 +132,13 @@ export default function Page() {
     <div className="grid gap-4 lg:col-span-4">
       {/* 1 - Roxo escuro */}
       <div className="rounded-3xl bg-primary p-6 text-base shadow-sm text-center place-items-center">
-        <div className="grid h-14 w-14 place-items-center">
+        <div className="grid h-14 w-14 place-items-center ">
           <Image
             src="/icone-fluxos.png"
             alt=""
             width={73}
             height={73}
-            className="h-[73px] w-[73px]"
+            className="h-auto w-auto"
           />
         </div>
         <p className="mt-5 text-lg font-normal leading-snug">
@@ -147,17 +147,17 @@ export default function Page() {
       </div>
 
       {/* 2 - Lilás */}
-      <div className="rounded-3xl bg-secondary p-6 text-white shadow-sm">
-        <div className="grid h-14 w-14 place-items-center rounded-2xl bg-white/15">
+      <div className="rounded-3xl bg-secondary p-6 text-white shadow-sm place-items-center">
+        <div className="grid h-14 w-14 place-items-center">
           <Image
             src="/icone-reducao.png"
             alt=""
-            width={34}
-            height={34}
-            className="h-8 w-8"
+            width={72}
+            height={73}
+            className="h-auto w-auto"
           />
         </div>
-        <p className="mt-5 text-lg font-semibold leading-snug">
+        <p className="mt-5 text-lg font-normal leading-snug">
           Redução de <br /> retrabalhos
         </p>
       </div>
@@ -168,17 +168,17 @@ export default function Page() {
       {/* Lilás */}
       <div className="rounded-3xl bg-secondary p-6 text-white shadow-sm">
         <div className="flex items-center gap-4">
-          <div className="grid h-14 w-14 place-items-center rounded-2xl bg-white/15">
+          <div className="grid h-14 w-14 place-items-center">
             <Image
               src="/icone-calendario.png"
               alt=""
-              width={34}
-              height={34}
-              className="h-8 w-8"
+              width={73}
+              height={66}
+              className="h-auto w-auto"
             />
           </div>
-          <p className="text-lg font-semibold leading-snug">
-            Mais organização no <br /> dia a dia
+          <p className="text-lg font-normal leading-snug">
+            Mais organização no dia a dia
           </p>
         </div>
       </div>
@@ -186,17 +186,17 @@ export default function Page() {
       {/* Roxo escuro */}
       <div className="rounded-3xl bg-primary p-6 text-base shadow-sm">
         <div className="flex items-center gap-4">
-          <div className="grid h-14 w-14 place-items-center rounded-2xl bg-white/10">
+          <div className="grid h-14 w-14 place-items-center ">
             <Image
               src="/icone-planejamento.png"
               alt=""
-              width={34}
-              height={34}
-              className="h-8 w-8"
+              width={73}
+              height={74}
+              className="h-auto w-auto"
             />
           </div>
-          <p className="text-lg font-semibold leading-snug">
-            Planejamento estratégico <br /> de comunicação
+          <p className="text-lg font-normal leading-snug">
+            Planejamento estratégico de comunicação
           </p>
         </div>
       </div>
@@ -204,17 +204,17 @@ export default function Page() {
       {/* Lilás */}
       <div className="rounded-3xl bg-secondary p-6 text-white shadow-sm">
         <div className="flex items-center gap-4">
-          <div className="grid h-14 w-14 place-items-center rounded-2xl bg-white/15">
+          <div className="grid h-14 w-14 place-items-center">
             <Image
               src="/icone-autonomia.png"
               alt=""
-              width={34}
-              height={34}
-              className="h-8 w-8"
+              width={73}
+              height={73}
+              className="h-auto w-auto"
             />
           </div>
-          <p className="text-lg font-semibold leading-snug">
-            Autonomia sem depender <br /> de equipe grande
+          <p className="text-lg font-normal leading-snug">
+            Autonomia sem depender de equipe grande
           </p>
         </div>
       </div>
