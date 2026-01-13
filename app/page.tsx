@@ -94,7 +94,7 @@ export default function Page() {
 
       <main className="flex-1 bg-white">
         <section className="container-xl py-16">
-          <h2 className="text-center text-3xl font-extrabold text-black">Quem já faz parte</h2>
+          <h2 className="text-center text-4xl font-extrabold text-black">Quem já faz parte</h2>
           <p className="mt-1 text-center text-lg text-black">
             Dermatologistas que apostam em uma experiência mais organizada e personalizada.
           </p>
@@ -102,7 +102,7 @@ export default function Page() {
           <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
             {Array.from({ length: 7 }).map((_, i) => (
               <div key={i} className="rounded-lg bg-[#f1e8ef] px-2 py-2 shadow-sm">
-                <Image src="/logo-renata.png" alt="Renata Mitelman" width={220} height={44} className="h-[22px] w-auto" />
+                <Image src="/logo-renata.png" alt="Renata Mitelman" width={210} height={52} className="h-[52px] w-auto" />
               </div>
             ))}
           </div>
@@ -112,7 +112,7 @@ export default function Page() {
           <div className="container-xl ">
             <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
               <div className="lg:col-span-4">
-                <h3 className="text-3xl font-extrabold text-black">Por que é bom para sua clínica</h3>
+                <h3 className="text-4xl font-extrabold text-black">Por que é bom para sua clínica</h3>
                 <p className="mt-3 text-lg leading-relaxed text-black">
                   O Club Dermato Care permite criar e gerenciar campanhas de forma estratégica,
                   com ferramentas que aumentam a fidelização e fortalecem o relacionamento com seus pacientes.
@@ -228,50 +228,70 @@ export default function Page() {
 
         <section className="container-xl py-14">
           <div className="text-center">
-            <h3 className="text-2xl font-extrabold">Facilidade é a palavra chave</h3>
-            <p className="mt-1 text-xs text-primary/70">Impulsionando seu marketing com poucos cliques</p>
+            <h3 className="text-4xl font-extrabold text-black">Facilidade é a palavra chave</h3>
+            <p className="mt-1 text-lg text-black">Impulsionando seu marketing com poucos cliques</p>
           </div>
 
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {marketingSteps.map((s) => (
               <div key={s.title} className="grid justify-items-center text-center">
-                <div className="grid h-14 w-14 place-items-center rounded-full bg-primary shadow-sm">
-                  <Image src={s.icon} alt="" width={28} height={28} className="h-7 w-7" />
+                <div className="grid h-[147px] w-[147px] place-items-center rounded-full bg-primary shadow-sm">
+                  <Image src={s.icon} alt="" width={102} height={85} className="h-auto w-auto" />
                 </div>
-                <p className="mt-3 text-xs font-bold text-primary/80">{s.title}</p>
+                <p className="mt-3 text-lg font-normal text-black w-52">{s.title}</p>
               </div>
             ))}
           </div>
         </section>
 
         <section className="container-xl pb-14">
-          <h3 className="text-lg font-extrabold">Features para a clínica</h3>
+  <h3 className="text-4xl font-extrabold text-black">Features para a clínica</h3>
 
-          <div className="mt-6 rounded-3xl bg-white/55 p-6 shadow-sm ring-1 ring-primary/10">
-            <div className="grid gap-6 lg:grid-cols-12 lg:items-center">
-              <div className="lg:col-span-6">
-                <div className="flex items-center justify-between">
-                  <button aria-label="Anterior" className="grid h-10 w-10 place-items-center rounded-full bg-base ring-1 ring-primary/10">
-                    <Image src="/seta-esquerda.png" alt="" width={20} height={20} className="h-5 w-5" />
-                  </button>
-                  <button aria-label="Próximo" className="grid h-10 w-10 place-items-center rounded-full bg-base ring-1 ring-primary/10">
-                    <Image src="/seta-direita.png" alt="" width={20} height={20} className="h-5 w-5" />
-                  </button>
-                </div>
+  <div className="mt-6 rounded-[36px] bg-[#f1e8ef] p-10 shadow-sm ring-1 ring-primary/10">
+    {/* setas nos cantos */}
+    <div className="flex items-center justify-between">
+      <button
+        aria-label="Anterior"
+        className="grid h-12 w-12 place-items-center "
+      >
+        <Image src="/seta-esquerda.png" alt="" width={57} height={57} className="h-auto w-auto" />
+      </button>
 
-                <p className="mt-5 text-[11px] font-extrabold tracking-widest text-primary/70">CADASTRO DE CLIENTES</p>
-                <p className="mt-3 text-sm leading-relaxed text-primary/75">
-                  Centraliza o registro e gerenciamento dos pacientes da clínica, permitindo acompanhar perfis,
-                  histórico de participação, níveis, pontos e engajamento nas campanhas.
-                </p>
-              </div>
+      <button
+        aria-label="Próximo"
+        className="grid h-12 w-12 place-items-center "
+      >
+        <Image src="/seta-direita.png" alt="" width={57} height={57} className="h-auto w-auto" />
+      </button>
+    </div>
 
-              <div className="lg:col-span-6">
-                <Image src="/laptop.png" alt="Prévia do painel" width={1200} height={800} className="h-auto w-full rounded-2xl" />
-              </div>
-            </div>
-          </div>
-        </section>
+    {/* conteúdo */}
+    <div className="mt-8 grid items-center gap-10 lg:grid-cols-12">
+      <div className="lg:col-span-6">
+        <p className="text-xl font-extrabold tracking-widest text-primary">
+          CADASTRO DE CLIENTES
+        </p>
+
+        <p className="mt-4 text-xl leading-relaxed text-black">
+          Centraliza o registro e gerenciamento dos pacientes da clínica, permitindo acompanhar perfis,
+          histórico de participação, níveis, pontos e engajamento nas campanhas.
+        </p>
+      </div>
+
+      <div className="lg:col-span-6">
+        <Image
+          src="/laptop.png"
+          alt="Prévia do painel"
+          width={1200}
+          height={800}
+          className="w-full h-auto"
+          priority
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
 
         <section className="container-xl pb-14">
           <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
