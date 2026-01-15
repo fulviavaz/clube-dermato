@@ -247,7 +247,7 @@ export default function Page() {
         <section className="container-xl pb-14">
   <h3 className="text-4xl font-extrabold text-black">Features para a clínica</h3>
 
-  <div className="mt-6 rounded-[36px] bg-[#f1e8ef] p-10 shadow-sm ring-1 ring-primary/10">
+  <div className="mt-6 rounded-[36px] bg-[#f1e8ef] p-10 shadow-sm ring-1 ring-primary/10 relative h-[600px]">
     {/* setas nos cantos */}
     <div className="flex items-center justify-between">
       <button
@@ -272,13 +272,13 @@ export default function Page() {
           CADASTRO DE CLIENTES
         </p>
 
-        <p className="mt-4 text-xl leading-relaxed text-black">
+        <p className="mt-4 text-xl leading-relaxed text-black w-96">
           Centraliza o registro e gerenciamento dos pacientes da clínica, permitindo acompanhar perfis,
           histórico de participação, níveis, pontos e engajamento nas campanhas.
         </p>
       </div>
 
-      <div className="lg:col-span-6">
+      <div className="lg:col-span-6 absolute -right-10 top-28 ">
         <Image
           src="/laptop.png"
           alt="Prévia do painel"
@@ -381,28 +381,28 @@ export default function Page() {
 
 
         <section className="container-xl py-14">
-          <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
+          <div className="grid gap-10 lg:grid-cols-12 lg:items-top">
             <div className="lg:col-span-6">
-              <h3 className="text-2xl font-extrabold">Você não precisa de uma super equipe</h3>
-              <p className="mt-3 text-sm leading-relaxed text-primary/75">
+              <h3 className="text-4xl font-extrabold text-black">Você não precisa de uma super equipe</h3>
+              <p className="mt-3 text-xl leading-relaxed text-black">
                 Automações, templates e uma navegação simples garantem que você mantenha tudo organizado sem depender
                 de grandes times. Mais autonomia, menos esforço.
               </p>
             </div>
             <div className="lg:col-span-6">
-              <div className="overflow-hidden rounded-3xl bg-white/55 p-3 shadow-sm ring-1 ring-primary/10">
+              <div >
                 <Image src="/medica.png" alt="Profissional" width={1200} height={800} className="w-full rounded-2xl object-cover" />
               </div>
             </div>
           </div>
 
           <div className="mt-10 grid gap-10 lg:grid-cols-12 lg:items-center">
-            <div className="lg:col-span-5 overflow-hidden rounded-3xl bg-white/55 p-3 shadow-sm ring-1 ring-primary/10">
+            <div className="lg:col-span-5 ">
               <Image src="/mulher-negra.png" alt="Benefícios" width={1200} height={800} className="w-full rounded-2xl object-cover" />
             </div>
-            <div className="lg:col-span-7">
-              <h4 className="text-lg font-extrabold text-primary">Tipos de benefícios que o cliente vai encontrar</h4>
-              <p className="mt-3 text-sm leading-relaxed text-primary/75">
+            <div className="lg:col-span-7 ">
+              <h4 className="text-4xl font-extrabold text-black">Tipos de benefícios que o cliente vai encontrar</h4>
+              <p className="mt-3 text-xl leading-relaxed text-black">
                 Uma experiência clara e fácil: conteúdos organizados, jornada transparente, acesso rápido
                 ao que precisa e uma comunicação mais humana.
               </p>
@@ -414,52 +414,154 @@ export default function Page() {
           </div>
         </section>
 
-        <section className="bg-white/35">
-          <div className="container-xl py-14">
-            <h3 className="text-2xl font-extrabold">Contexto do Mercado</h3>
+      <section className="bg-base">
+  <div className="container-xl py-14">
+            <h3 className="text-4xl font-extrabold text-black">Contexto do Mercado</h3>
+            
+            {/* row 1 */}
+<div className="flex mt-8 gap-4 w-full">
+  {/* imagens */}
+  <div className="flex gap-4">
+    <Image
+      src="/grid-img-2.png"
+      alt="mulheres"
+      width={277}
+      height={384}
+      className="h-[384px] w-auto object-cover rounded-3xl"
+    />
 
-            <div className="mt-6 grid gap-4 lg:grid-cols-12">
-              <div className="lg:col-span-5 overflow-hidden rounded-3xl bg-white/55 p-3 shadow-sm ring-1 ring-primary/10">
-                <Image src="/grid-img-1.png" alt="Contexto 1" width={1200} height={800} className="w-full rounded-2xl object-cover" />
-              </div>
+    <Image
+      src="/grid-img-1.png"
+      alt="procedimento"
+      width={277}
+      height={384}
+      className="h-[384px] w-auto object-cover rounded-3xl"
+    />
+  </div>
 
-              <div className="lg:col-span-7 grid gap-4 sm:grid-cols-2">
-                {[
-                  { img: "/grid-img-2.png", text: "O mercado de estética segue em forte expansão no Brasil, impulsionado pela demanda por cuidados com a pele e procedimentos não invasivos." },
-                  { img: "/grid-img-3.png", text: "O número de profissionais aumenta, tornando o setor mais competitivo e exigindo diferenciação." },
-                  { img: "/grid-img-4.png", text: "Novos tratamentos e tecnologias surgem continuamente, ampliando o interesse e a necessidade de comunicação ativa." },
-                  { img: "/grid-img-5.png", text: "Jovens dermatologistas são maioria nas redes sociais, construindo audiência e influenciando decisões de pacientes." },
-                ].map((c, i) => (
-                  <div key={i} className="rounded-3xl bg-white/55 p-4 shadow-sm ring-1 ring-primary/10">
-                    <div className="overflow-hidden rounded-2xl">
-                      <Image src={c.img} alt={`Card ${i + 1}`} width={1200} height={800} className="w-full h-auto object-cover" />
-                    </div>
-                    <p className="mt-3 text-sm text-primary/75">{c.text}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="container-xl py-14" id="demonstracao">
-          <h3 className="text-2xl font-extrabold">Oportunidades</h3>
-
-          <div className="mt-8 grid gap-6 lg:grid-cols-3">
-            {opportunities.map((o) => (
-              <div key={o.title} className="flex gap-4 rounded-3xl bg-white/55 p-6 shadow-sm ring-1 ring-primary/10">
-                <div className="grid h-12 w-12 place-items-center rounded-2xl bg-secondary/45">
-                  <Image src={o.icon} alt="" width={28} height={28} className="h-7 w-7" />
+  {/* card rosa */}
+  <div className="flex flex-col gap-4 max-w-lg">
+    <div className="bg-secondary p-8 rounded-3xl">
+      <p className="text-white text-xl">
+        O mercado de estética segue em forte expansão no Brasil, impulsionado pela demanda
+        por cuidados com a pele e procedimentos não invasivos. (RBCP / Ipsos)
+      </p>
                 </div>
-                <p className="text-sm text-primary/75">{o.title}</p>
-              </div>
-            ))}
-          </div>
 
-          <div className="mt-10 rounded-full bg-primary px-6 py-3 text-center">
-            <a href="#suporte" className="text-[11px] font-bold tracking-widest text-base">SOLICITE UMA DEMONSTRAÇÃO</a>
-          </div>
-        </section>
+                <div className="flex gap-4">
+                
+                <div className="bg-primary p-8 rounded-3xl">
+                  <p className="text-white text-xl">
+                    O número de profissionais aumentou, tornando o setor mais competitivo e exigindo diferenciação. (RBCP)
+
+                  </p>
+                  </div>
+
+                    <Image
+      src="/grid-img-3.png"
+      alt="procedimento"
+      width={171}
+      height={187}
+      className="h-auto w-auto object-cover rounded-3xl"
+    />
+
+                  </div>
+  </div>
+            </div>
+            
+            {/* row 2 */}
+
+            <div className="flex gap-4 ">
+
+              <div className="bg-secondary p-8 rounded-3xl mt-4 max-w-lg h-[216px]">
+                <p className="text-white text-xl">A faixa entre 20 e 60 anos é a que mais investe em dermatologia
+                  e prioriza confiança e vínculo acima de preço. (Estética e Mercado)</p>
+
+              </div>
+
+              
+                    <Image
+      src="/grid-img-4.png"
+      alt="procedimento"
+      width={255}
+      height={216}
+      className="h-auto w-auto object-cover rounded-3xl mt-4"
+              />
+              
+              <div className="bg-secondary p-8 rounded-3xl mt-4 max-w-lg h-[216px]">
+                <p className="text-white text-xl">
+                  Novos tratamentos e tecnologias surgem continuamente, ampliando o interesse e
+                  a necessidade de comunicação ativa. (IMARC)
+
+                </p>
+
+              </div>
+
+            </div>
+
+              
+            {/* row 3 */}
+
+            <div className="flex gap-4 ">
+
+
+              
+                    <Image
+      src="/grid-img-5.png"
+      alt="procedimento"
+      width={380}
+      height={187}
+      className="h-auto w-auto object-cover rounded-3xl mt-4"
+              />
+              
+              <div className="bg-primary p-8 rounded-3xl mt-4  h-[187px]">
+                <p className="text-white text-xl">
+                <span className="font-bold">Jovens dermatologistas são maioria nas redes sociais</span>, ocupando espaço, construindo audiência e influenciando decisões de pacientes. (Levantamentos de engajamento, setor de saúde/estética)
+
+
+                </p>
+
+              </div>
+
+            </div>
+
+
+  
+  </div>
+</section>
+
+
+
+      <section className="container-xl py-14" id="demonstracao">
+  <h3 className="text-5xl font-extrabold text-black">Oportunidades</h3>
+
+  <div className="mt-10 space-y-14">
+    {opportunities.map((o) => (
+      <div key={o.title} className="flex items-center gap-10">
+        {/* ícone grande no círculo */}
+        <div className="grid h-[147px] w-[147px] place-items-center rounded-full bg-secondary">
+          <Image src={o.icon} alt="" width={76} height={96} className="h-auto w-auto" />
+        </div>
+
+        {/* texto grande preto */}
+        <p className="max-w-4xl text-2xl leading-relaxed text-black">
+          {o.title}
+        </p>
+      </div>
+    ))}
+  </div>
+
+  {/* CTA grande */}
+  <div className="mt-14">
+    <a
+      href="#suporte"
+      className="block w-full rounded-full bg-primary py-5 text-center text-xl font-extrabold tracking-widest text-base"
+    >
+      SOLICITE UMA DEMONSTRAÇÃO
+    </a>
+  </div>
+</section>
+
       </main>
 
       <footer className="w-full bg-primary text-base" id="suporte">
@@ -468,7 +570,7 @@ export default function Page() {
             <Image src="/logo-claro.png" alt="Club Dermato Care" width={600} height={320} className="w-full h-auto" />
           </div>
 
-          <address className="not-italic text-xs leading-relaxed text-base/90">
+          <address className="not-italic text-lg leading-relaxed text-base/90">
             <strong>GT MARKETING DIRETO EIRELI</strong> <br />
             Rua jose Ramon Urtiza 209 bloco A, CEP 05717-250, inscrita no CNPJ/MF sob o número 34.650.034/0001-43
           </address>
