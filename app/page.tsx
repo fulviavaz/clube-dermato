@@ -1,6 +1,9 @@
 "use client";
 import Image from "next/image";
 import FadeIn from "../components/FadeIn/FadeIn";
+import ClinicFeaturesCarousel from "../components/ClinicFeaturesCarousel/ClinicFeaturesCarousel";
+import { PatientCarousel } from "../components/PatientCarousel/PatientCarousel";
+
 
 const clinicCards = [
   { title: "Fluxos claros e centralizados", icon: "/icone-fluxos.png" },
@@ -334,54 +337,7 @@ export default function Page() {
 </section>
 
 
-        <section className="container-xl pb-14">
-  <h3 className="text-4xl font-extrabold text-black">Features para a clínica</h3>
-
-  <div className="mt-6 rounded-[36px] bg-[#f1e8ef] p-10 shadow-sm ring-1 ring-primary/10 relative h-[600px]">
-    {/* setas nos cantos */}
-    <div className="flex items-center justify-between">
-      <button
-        aria-label="Anterior"
-        className="grid h-12 w-12 place-items-center "
-      >
-        <Image src="/seta-esquerda.png" alt="" width={57} height={57} className="h-auto w-auto" />
-      </button>
-
-      <button
-        aria-label="Próximo"
-        className="grid h-12 w-12 place-items-center "
-      >
-        <Image src="/seta-direita.png" alt="" width={57} height={57} className="h-auto w-auto" />
-      </button>
-    </div>
-
-    {/* conteúdo */}
-    <div className="mt-8 grid items-center gap-10 lg:grid-cols-12">
-      <div className="lg:col-span-6">
-        <p className="text-xl font-extrabold tracking-widest text-primary">
-          CADASTRO DE CLIENTES
-        </p>
-
-        <p className="mt-4 text-xl l leading-relaxed text-black w-96">
-          Centraliza o registro e gerenciamento dos pacientes da clínica, permitindo acompanhar perfis,
-          histórico de participação, níveis, pontos e engajamento nas campanhas.
-        </p>
-      </div>
-
-      <div className="lg:col-span-6 absolute -right-10 top-28 ">
-        <Image
-          src="/laptop.png"
-          alt="Prévia do painel"
-          width={1200}
-          height={800}
-          className="w-full h-auto"
-          priority
-        />
-      </div>
-    </div>
-  </div>
-</section>
-
+        <ClinicFeaturesCarousel />
 
         <section className="container-xl pb-14">
           <FadeIn delay={0.08} y={18}>
@@ -425,47 +381,7 @@ export default function Page() {
     </p></FadeIn>
 
   {/* CARD */}
-<div className="relative mt-32 h-[420px] rounded-[40px] bg-secondary px-16 py-16 overflow-visible">
-  {/* seta esquerda */}
-  <button
-    aria-label="Anterior"
-    className="absolute left-8 top-1/2 -translate-y-1/2 z-20"
-  >
-    <Image src="/seta-esquerda.png" alt="" width={57} height={57} />
-  </button>
-
-  {/* seta direita */}
-  <button
-    aria-label="Próximo"
-    className="absolute right-8 top-1/2 -translate-y-1/2 z-20"
-  >
-    <Image src="/seta-direita.png" alt="" width={57} height={57} />
-  </button>
-
-  {/* TEXTO (continua no fluxo normal) */}
-  <div className="max-w-md pl-12">
-    <p className="text-2xl font-extrabold tracking-widest text-white">
-      PERFIL/NÍVEL/PONTOS
-    </p>
-
-    <p className="mt-6 text-xl leading-relaxed text-white">
-      Menu completo com informações para os usuários consultarem sobre seu perfil,
-      nível alcançado e pontuação acumulada.
-    </p>
-  </div>
-
-  {/* MOBILE (absolute, controlado) */}
-  <div className="absolute right-28 top-1/3 -translate-y-1/2">
-    <Image
-      src="/mobile.png"
-      alt="Aplicativo do paciente"
-      width={260}
-      height={530}
-      priority
-      className="drop-shadow-2xl"
-    />
-  </div>
-</div>
+<PatientCarousel />
 
             
   </div>
