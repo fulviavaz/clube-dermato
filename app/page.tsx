@@ -384,6 +384,7 @@ export default function Page() {
 
 
         <section className="container-xl pb-14">
+          <FadeIn delay={0.08} y={18}>
           <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
             <div className="lg:col-span-6">
               <h3 className="text-4xl font-extrabold text-black">Por que é bom para o seu cliente</h3>
@@ -406,13 +407,14 @@ export default function Page() {
                 <Image src="/imagem-consulta.png" alt="Consulta" width={1200} height={800} className="w-full rounded-2xl object-cover" />
               </div>
             </div>
-          </div>
+            </div>
+            </FadeIn>
         </section>
 
       <section className="bg-base">
   <div className="container-xl py-16">
     {/* título fora do card */}
-    <h3 className="text-4xl font-extrabold text-black">
+      <FadeIn delay={0.08} y={18}><h3 className="text-4xl font-extrabold text-black">
       Features para o paciente
     </h3>
 
@@ -420,7 +422,7 @@ export default function Page() {
       As funcionalidades destinadas aos clientes oferecem uma jornada mais organizada e engajada,
       reunindo recursos que facilitam o acompanhamento de tratamentos, o acesso a benefícios e a
       interação direta com a clínica.
-    </p>
+    </p></FadeIn>
 
   {/* CARD */}
 <div className="relative mt-32 h-[420px] rounded-[40px] bg-secondary px-16 py-16 overflow-visible">
@@ -473,29 +475,31 @@ export default function Page() {
         <section className="container-xl py-14">
           <div className="grid gap-10 lg:grid-cols-12 lg:items-top">
             <div className="lg:col-span-6">
-              <h3 className="text-4xl font-extrabold text-black">Você não precisa de uma super equipe</h3>
+              <FadeIn delay={0.08} y={18}><h3 className="text-4xl font-extrabold text-black">Você não precisa de uma super equipe</h3>
               <p className="mt-3 text-xl leading-relaxed text-black">
                 Automações, templates e uma navegação simples garantem que você mantenha tudo organizado sem depender
                 de grandes times. Mais autonomia, menos esforço.
-              </p>
+                </p>
+              </FadeIn>
             </div>
             <div className="lg:col-span-6">
               <div >
-                <Image src="/medica.png" alt="Profissional" width={1200} height={800} className="w-full rounded-2xl object-cover" />
+                <FadeIn delay={0.08} y={18}><Image src="/medica.png" alt="Profissional" width={1200} height={800} className="w-full rounded-2xl object-cover" /></FadeIn>
               </div>
             </div>
           </div>
 
           <div className="mt-10 grid gap-10 lg:grid-cols-12 lg:items-center">
             <div className="lg:col-span-5 ">
-              <Image src="/mulher-negra.png" alt="Benefícios" width={1200} height={800} className="w-full rounded-2xl object-cover" />
+              <FadeIn delay={0.08} y={18}>  <Image src="/mulher-negra.png" alt="Benefícios" width={1200} height={800} className="w-full rounded-2xl object-cover" />
+              </FadeIn>
             </div>
             <div className="lg:col-span-7 ">
-              <h4 className="text-4xl font-extrabold text-black">Tipos de benefícios que o cliente vai encontrar</h4>
+            <FadeIn delay={0.08} y={18}> <h4 className="text-4xl font-extrabold text-black">Tipos de benefícios que o cliente vai encontrar</h4>
               <p className="mt-3 text-xl leading-relaxed text-black">
                 Uma experiência clara e fácil: conteúdos organizados, jornada transparente, acesso rápido
                 ao que precisa e uma comunicação mais humana.
-              </p>
+              </p></FadeIn>
             </div>
           </div>
 
@@ -509,6 +513,7 @@ export default function Page() {
             <h3 className="text-4xl font-extrabold text-black">Contexto do Mercado</h3>
             
             {/* row 1 */}
+            <FadeIn delay={0.08} y={18}>
 <div className="flex mt-8 gap-4 w-full">
   {/* imagens */}
   <div className="flex gap-4">
@@ -557,11 +562,12 @@ export default function Page() {
 
                   </div>
   </div>
-            </div>
+              </div>
+              </FadeIn>
             
             {/* row 2 */}
 
-            <div className="flex gap-4 ">
+          <FadeIn delay={0.08} y={18}> <div className="flex gap-4 ">
 
               <div className="bg-secondary p-8 rounded-3xl mt-4 max-w-lg h-[216px]">
                 <p className="text-white text-xl">A faixa entre 20 e 60 anos é a que mais investe em dermatologia
@@ -588,11 +594,12 @@ export default function Page() {
               </div>
 
             </div>
+            </FadeIn>
 
               
             {/* row 3 */}
 
-            <div className="flex gap-4 ">
+          <FadeIn delay={0.08} y={18}> <div className="flex gap-4 ">
 
 
               
@@ -614,6 +621,7 @@ export default function Page() {
               </div>
 
             </div>
+            </FadeIn>
 
 
   
@@ -625,7 +633,7 @@ export default function Page() {
       <section className="container-xl py-14" id="demonstracao">
   <h3 className="text-5xl font-extrabold text-black">Oportunidades</h3>
 
-  <div className="mt-10 space-y-14">
+  <FadeIn delay={0.08} y={18}><div className="mt-10 space-y-14">
     {opportunities.map((o) => (
       <div key={o.title} className="flex items-center gap-10">
         {/* ícone grande no círculo */}
@@ -639,7 +647,8 @@ export default function Page() {
         </p>
       </div>
     ))}
-  </div>
+          </div>
+          </FadeIn>
 
   {/* CTA grande */}
   <div className="mt-14">
