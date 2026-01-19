@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "../styles/globals.css";
 
+
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
@@ -12,6 +13,8 @@ export const metadata: Metadata = {
   title: "Club Dermato Care",
   description: "Landing page do Club Dermato Care",
 };
+
+
 
 export default function RootLayout({
   children,
