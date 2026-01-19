@@ -120,7 +120,7 @@ export default function Page() {
   </AnimatePresence>
 
   {/* bolinhas */}
-  <div className="absolute bottom-6 left-10 flex items-center gap-2">
+  {/* <div className="absolute bottom-6 left-10 flex items-center gap-2">
     {slides.map((_, i) => (
       <button
         key={i}
@@ -136,7 +136,7 @@ export default function Page() {
         ].join(" ")}
       />
     ))}
-  </div>
+  </div> */}
 </div>
         </div>
       </section>

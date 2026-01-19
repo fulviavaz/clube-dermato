@@ -374,7 +374,7 @@ export default function Page() {
       Features para o paciente
     </h3>
 
-    <p className="mt-4  text-lg leading-relaxed text-black">
+    <p className="mt-4 text-xl leading-relaxed text-black">
       As funcionalidades destinadas aos clientes oferecem uma jornada mais organizada e engajada,
       reunindo recursos que facilitam o acompanhamento de tratamentos, o acesso a benefícios e a
       interação direta com a clínica.
