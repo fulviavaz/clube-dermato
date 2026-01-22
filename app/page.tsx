@@ -370,11 +370,11 @@ export default function Page() {
       <section className="bg-base">
   <div className="container-xl py-16">
     {/* título fora do card */}
-      <FadeIn delay={0.08} y={18}><h3 className="text-4xl font-extrabold text-black">
+      <FadeIn delay={0.08} y={18} ><h3 className="text-4xl font-extrabold text-black">
       Features para o paciente
     </h3>
 
-    <p className="mt-4 text-xl leading-relaxed text-black">
+    <p className="mt-4 pb-14 text-xl leading-relaxed text-black">
       As funcionalidades destinadas aos clientes oferecem uma jornada mais organizada e engajada,
       reunindo recursos que facilitam o acompanhamento de tratamentos, o acesso a benefícios e a
       interação direta com a clínica.

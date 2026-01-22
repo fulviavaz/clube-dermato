@@ -9,20 +9,62 @@ const slides = [
     eyebrow: "CADASTRO DE CLIENTES",
     text:
       "Centraliza o registro e gerenciamento dos pacientes da clínica, permitindo acompanhar perfis, histórico de participação, níveis, pontos e engajamento nas campanhas.",
-    image: "/laptop.png",
+    image: "/cadastro-clientes.png",
   },
   // duplicado enquanto não tem os outros
   {
-    eyebrow: "CADASTRO DE CLIENTES",
+    eyebrow: "CONFIGURAÇÃO DE NÍVEIS E PONTOS",
     text:
-      "Centraliza o registro e gerenciamento dos pacientes da clínica, permitindo acompanhar perfis, histórico de participação, níveis, pontos e engajamento nas campanhas.",
-    image: "/laptop.png",
+      "Permite acompanhar a evolução dos clientes no programa, visualizar a pontuação acumulada e identificar quem está próximo de alcançar novos níveis e recompensas.",
+    image: "/config-niveis-pontos.png",
   },
   {
-    eyebrow: "CADASTRO DE CLIENTES",
+    eyebrow: "CONFIGURAÇÃO DO CATÁLOGO DE SEVIÇOS E PRODUTOS",
     text:
-      "Centraliza o registro e gerenciamento dos pacientes da clínica, permitindo acompanhar perfis, histórico de participação, níveis, pontos e engajamento nas campanhas.",
-    image: "/laptop.png",
+      "Mostra o interesse dos clientes pelos itens do catálogo, facilitando a análise de acessos, compras e preferências em tratamentos e produtos.",
+    image: "/config-catalogo.png",
+  },
+  {
+    eyebrow: "HABILITAÇÃO DO CONTEÚDO BLOG",
+    text:
+      "Centraliza a ativação e visualização dos conteúdos disponibilizados no blog, permitindo acompanhar o acesso dos clientes e o interesse pelos temas de cuidado dermatológico.",
+    image: "/hab-blog.png",
+  },
+  {
+    eyebrow: "CAMPANHAS PRÉ PRODUZIDAS",
+    text:
+      "Disponibiliza campanhas prontas para uso, facilitando a execução de ações rápidas e permitindo acompanhar o desempenho e alcance de cada disparo.",
+    image: "/camp-pre-prod.png",
+  },
+  {
+    eyebrow: "CAMPANHAS AVULSAS",
+    text:
+      "Oferece liberdade para criar campanhas personalizadas do zero, com total flexibilidade de formato e mensagem, acompanhando resultados em tempo real.",
+    image: "/camp-avul.png",
+  },
+  {
+    eyebrow: "GESTÃO DE CAMPANHA",
+    text:
+      "Área onde você administra todas as campanhas criadas na plataforma. Aqui é possível visualizar status, editar conteúdos, acompanhar resultados, pausar ou ativar ações e manter o controle completo das comunicações enviadas aos usuários.",
+    image: "/gestao-campanha.png",
+  },
+  {
+    eyebrow: "PAINEL DE ANÁLISE PARA CONTROLE DE CAMPANHAS",
+    text:
+      "Reúne indicadores essenciais de desempenho, como abertura de e-mails, cliques, acessos ao portal, uso de benefícios, perfil dos clientes e evolução das ações de marketing.",
+    image: "/painel-analise.png",
+  },
+  {
+    eyebrow: "CONSULTORIA DE MARKETING",
+    text:
+      "Reunião mensal dividida em dois momentos: - Onboarding para novas assinantes - Sessões de dúvidas para clínicas ativas",
+    image: "/consultoria-marketing.png",
+  },
+    {
+    eyebrow: "TREINAMENTO SOBRE A FERRAMENTA",
+    text:
+      "Garantia de que toda a equipe saiba utilizar a plataforma de maneira eficiente.",
+    image: "/treinamento-ferramenta.png",
   },
 ];
 

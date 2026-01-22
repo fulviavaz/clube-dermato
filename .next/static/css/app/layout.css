@@ -953,6 +953,9 @@ video {
 .mt-8 {
   margin-top: 2rem;
 }
+.mb-28 {
+  margin-bottom: 7rem;
+}
 .block {
   display: block;
 }
@@ -1224,6 +1227,9 @@ video {
 }
 .pt-8 {
   padding-top: 2rem;
+}
+.pb-20 {
+  padding-bottom: 5rem;
 }
 .text-center {
   text-align: center;

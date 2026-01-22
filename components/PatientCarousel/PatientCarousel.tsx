@@ -11,21 +11,56 @@ type PatientSlide = {
 };
 
 const patientSlides: PatientSlide[] = [
+  
   {
     title: "PERFIL/NÍVEL/PONTOS",
     desc: "Menu completo com informações para os usuários consultarem sobre seu perfil, nível alcançado e pontuação acumulada.",
     image: "/mobile.png",
   },
-  // duplicando por enquanto (troque depois)
   {
-    title: "PERFIL/NÍVEL/PONTOS",
-    desc: "Menu completo com informações para os usuários consultarem sobre seu perfil, nível alcançado e pontuação acumulada.",
-    image: "/mobile.png",
+    title: "PROGRESSO DE TRATAMENTOS",
+    desc: "A paciente pode visualizar quanto falta para completar seu tratamento ou pacote de sessões.",
+    image: "/progresso.png",
   },
-  {
-    title: "PERFIL/NÍVEL/PONTOS",
-    desc: "Menu completo com informações para os usuários consultarem sobre seu perfil, nível alcançado e pontuação acumulada.",
-    image: "/mobile.png",
+    {
+    title: "CARTELA COMPLETOU GANHOU",
+    desc: "Assim que completar uma quantidade X de procedimentos na clínica, a paciente ganha uma porcentagem de desconto em uma consulta ou tratamento.",
+    image: "/progresso.png",
+  },
+    {
+    title: "VAQUINHA",
+    desc: "Possibilidade de criação de uma vaquinha própria para pacientes que necessitam de auxílio financeiro para realizar um tratamento.",
+    image: "/vaquinha.png",
+  },
+    {
+    title: "AGENDAMENTO",
+    desc: "A paciente pode agendar procedimentos de forma rápida e fácil direto pelo site e pelo aplicativo.",
+    image: "/agendamento.png",
+  },
+    {
+    title: "COMPRA DE SERVIÇOS E PRODUTOS",
+    desc: "Acesso a todos os serviços, tratamentos e produtos oferecidos pela clínica de forma simples e prática.",
+    image: "/compra-servicos.png",
+  },
+    {
+    title: "CLUBE DE BENEFÍCIOS",
+    desc: "Área dedicada aos benefícios disponíveis para cada paciente, conforme seu nível ou campanhas ativas.",
+    image: "/compra-servicos.png",
+  },
+      {
+    title: "GIFTCARD",
+    desc: "Gift Card para incentivar clientes a voltarem à clínica e realizarem outros tratamentos. A paciente também pode presentear outra pessoa com o gift card, auxiliando na atração de novos clientes.",
+    image: "/giftcard.png",
+  },
+        {
+    title: "INDICAÇÃO",
+    desc: "Ao indicar uma pessoa e ela realizar um procedimento, a paciente ganha um desconto ou uma cortesia.",
+    image: "/indicacao.png",
+  },
+          {
+    title: "CONTEÚDO BLOG",
+    desc: "Blog com assuntos informativos sobre o universo da beleza e dos cuidados dermatológicos.",
+    image: "/blog.png",
   },
 ];
 
