@@ -136,7 +136,7 @@ export default function Page() {
       <div
         className="
           lg:col-span-7
-          lg:absolute lg:right-[-36px] lg:bottom-[-26px]
+          lg:absolute lg:right-[-36px] lg:top-[30px]
           lg:w-[640px]
           pointer-events-none
         "
