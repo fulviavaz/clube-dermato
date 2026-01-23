@@ -25,7 +25,7 @@ const patientSlides: PatientSlide[] = [
     {
     title: "CARTELA COMPLETOU GANHOU",
     desc: "Assim que completar uma quantidade X de procedimentos na clínica, a paciente ganha uma porcentagem de desconto em uma consulta ou tratamento.",
-    image: "/progresso.png",
+    image: "/cartela.png",
   },
     {
     title: "VAQUINHA",
@@ -45,7 +45,7 @@ const patientSlides: PatientSlide[] = [
     {
     title: "CLUBE DE BENEFÍCIOS",
     desc: "Área dedicada aos benefícios disponíveis para cada paciente, conforme seu nível ou campanhas ativas.",
-    image: "/compra-servicos.png",
+    image: "/club-beneficios.png",
   },
       {
     title: "GIFTCARD",
