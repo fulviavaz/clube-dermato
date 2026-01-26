@@ -103,13 +103,13 @@ export function PatientCarousel() {
         <AnimatePresence mode="wait" initial={false}>
           <motion.div key={index} className="relative">
             {/* TEXTO */}
-            <motion.div
-              initial={{ opacity: 0, x: dir * 24 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: dir * -24 }}
-              transition={{ duration: 0.35, ease: "easeOut" }}
-              className="max-w-xl lg:max-w-md lg:pl-12 lg:min-h-[220px]"
-            >
+          <motion.div
+  initial={{ opacity: 0, x: dir * 24 }}
+  animate={{ opacity: 1, x: 0 }}
+  exit={{ opacity: 0, x: dir * -24 }}
+  transition={{ duration: 0.35, ease: "easeOut" }}
+  className="mt-16 max-w-xl lg:mt-0 lg:max-w-md lg:pl-12 lg:min-h-[220px]"
+>
               <p className="text-xl font-extrabold tracking-widest text-white sm:text-2xl">
                 {s.title}
               </p>
@@ -120,7 +120,7 @@ export function PatientCarousel() {
             </motion.div>
 
             {/* IMAGEM - MOBILE (frame fixo, embaixo) */}
-            <div className="mt-16 flex justify-center lg:hidden">
+            <div className="mt-10 flex justify-center lg:hidden">
               <motion.div
                 key={`img-m-${index}`}
                 initial={{ opacity: 0 }}

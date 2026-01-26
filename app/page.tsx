@@ -345,7 +345,7 @@ export default function Page() {
               </ul>
 
               <div className="mt-6">
-                <a href="#demonstracao" className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-[14px] font-normal tracking-widest text-base shadow-sm hover:opacity-95">
+                <a href="#demonstracao" className="inline-flex items-center text-center justify-center rounded-full bg-primary px-6 py-3 text-[14px] font-normal tracking-widest text-base shadow-sm hover:opacity-95">
                   CONECTE DADOS E RELACIONAMENTO
                 </a>
               </div>
@@ -643,7 +643,7 @@ export default function Page() {
 
   <FadeIn delay={0.08} y={18}><div className="mt-10 space-y-14">
     {opportunities.map((o) => (
-      <div key={o.title} className="flex items-center gap-10">
+      <div key={o.title} className="flex flex-wrap items-center gap-10">
         {/* ícone grande no círculo */}
         <div className="grid h-[147px] w-[147px] place-items-center rounded-full bg-secondary">
           <Image src={o.icon} alt="" width={76} height={96} className="h-auto w-auto" />
