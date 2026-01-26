@@ -452,7 +452,7 @@ export default function Page() {
 
   {/* card rosa */}
   <div className="flex flex-col gap-4 max-w-lg">
-    <div className="bg-secondary p-8 rounded-3xl">
+    <div className="bg-secondary p-8 rounded-3xl flex flex-col justify-center">
       <p className="text-white text-xl">
         O mercado de estética segue em forte expansão no Brasil, impulsionado pela demanda
         por cuidados com a pele e procedimentos não invasivos. (RBCP / Ipsos)
@@ -461,7 +461,7 @@ export default function Page() {
 
                 <div className="flex gap-4">
                 
-                <div className="bg-primary p-8 rounded-3xl">
+                <div className="bg-primary p-8 rounded-3xl flex flex-col justify-center">
                   <p className="text-white text-xl">
                     O número de profissionais aumentou, tornando o setor mais competitivo e exigindo diferenciação. (RBCP)
 
@@ -485,7 +485,7 @@ export default function Page() {
 
           <FadeIn delay={0.08} y={18}> <div className="flex gap-4 ">
 
-              <div className="bg-secondary p-8 rounded-3xl mt-4 max-w-lg h-[216px]">
+              <div className="bg-secondary p-8 rounded-3xl mt-4 max-w-lg h-[216px] flex flex-col justify-center">
                 <p className="text-white text-xl">A faixa entre 20 e 60 anos é a que mais investe em dermatologia
                   e prioriza confiança e vínculo acima de preço. (Estética e Mercado)</p>
 
@@ -500,7 +500,7 @@ export default function Page() {
       className="h-auto w-auto object-cover rounded-3xl mt-4"
               />
               
-              <div className="bg-secondary p-8 rounded-3xl mt-4 max-w-lg h-[216px]">
+              <div className="bg-secondary p-8 rounded-3xl mt-4 max-w-lg h-[216px] flex flex-col justify-center">
                 <p className="text-white text-xl">
                   Novos tratamentos e tecnologias surgem continuamente, ampliando o interesse e
                   a necessidade de comunicação ativa. (IMARC)
@@ -527,7 +527,7 @@ export default function Page() {
       className="h-auto w-auto object-cover rounded-3xl mt-4"
               />
               
-              <div className="bg-primary p-8 rounded-3xl mt-4  h-[187px]">
+              <div className="bg-primary p-8 rounded-3xl mt-4 h-[187px] flex flex-col justify-center flex flex-col justify-center">
                 <p className="text-white text-xl">
                 <span className="font-bold">Jovens dermatologistas são maioria nas redes sociais</span>, ocupando espaço, construindo audiência e influenciando decisões de pacientes. (Levantamentos de engajamento, setor de saúde/estética)
 
