@@ -201,7 +201,7 @@ export default function Page() {
 
                 {/* 1 - Roxo escuro */}
                 <div className="rounded-3xl bg-primary p-6 text-base shadow-sm text-center">
-                  <div className="mx-auto grid h-14 w-14 place-items-center">
+                  <div className="mx-auto flex flex-col justify-center h-14 w-14 place-items-center">
                     <Image
                       src="/icone-fluxos.png"
                       alt=""
@@ -216,8 +216,8 @@ export default function Page() {
                 </div>
 
                 {/* 2 - Lilás */}
-                <div className="rounded-3xl bg-secondary p-6 text-white shadow-sm text-center">
-                  <div className="mx-auto grid h-14 w-14 place-items-center">
+                <div className="rounded-3xl bg-secondary p-6 text-white shadow-sm text-center ">
+                  <div className="mx-auto flex flex-col justify-center h-14 w-14 place-items-center">
                     <Image
                       src="/icone-reducao.png"
                       alt=""
@@ -236,60 +236,53 @@ export default function Page() {
               <div className="grid gap-4 lg:col-span-8">
 
                 {/* Lilás */}
-                <div className="rounded-3xl bg-secondary p-6 text-white shadow-sm">
-                  <div className="flex items-center gap-4">
-                    <div className="grid h-14 w-14 place-items-center">
-                      <Image
-                        src="/icone-calendario.png"
-                        alt=""
-                        width={73}
-                        height={66}
-                        className="h-auto w-auto"
-                      />
-                    </div>
-                    <p className="text-lg font-normal leading-snug">
-                      Mais organização no dia a dia
-                    </p>
-                  </div>
-                </div>
+              <div className="rounded-3xl bg-secondary p-6 text-white shadow-sm">
+  <div className="flex flex-col items-center gap-3 lg:flex-row lg:items-center lg:gap-4">
+
+    <div className="grid h-14 w-14 place-items-center shrink-0">
+      <Image
+        src="/icone-calendario.png"
+        alt=""
+        width={73}
+        height={66}
+        className="h-auto w-auto"
+      />
+    </div>
+
+    <p className="text-lg font-normal leading-snug text-center lg:text-left">
+      Mais organização no dia a dia
+    </p>
+
+  </div>
+</div>
 
                 {/* Roxo escuro */}
-                <div className="rounded-3xl bg-primary p-6 text-base shadow-sm">
-                  <div className="flex items-center gap-4">
-                    <div className="grid h-14 w-14 place-items-center">
-                      <Image
-                        src="/icone-planejamento.png"
-                        alt=""
-                        width={73}
-                        height={74}
-                        className="h-auto w-auto"
-                      />
-                    </div>
-                    <p className="text-lg font-normal leading-snug text-white">
-                      Planejamento estratégico de comunicação
-                    </p>
-                  </div>
-                </div>
+            <div className="rounded-3xl bg-primary p-6 text-white shadow-sm">
+  <div className="flex flex-col items-center gap-3 lg:flex-row lg:items-center lg:gap-4">
+    <div className="grid h-14 w-14 place-items-center shrink-0">
+      <Image src="/icone-planejamento.png" alt="" width={73} height={74} className="h-auto w-auto" />
+    </div>
+    <p className="text-lg font-normal leading-snug text-center lg:text-left">
+      Planejamento estratégico de comunicação
+    </p>
+  </div>
+</div>
+
 
                 {/* Lilás */}
-                <div className="rounded-3xl bg-secondary p-6 text-white shadow-sm">
-                  <div className="flex items-center gap-4">
-                    <div className="grid h-14 w-14 place-items-center">
-                      <Image
-                        src="/icone-autonomia.png"
-                        alt=""
-                        width={73}
-                        height={73}
-                        className="h-auto w-auto"
-                      />
-                    </div>
-                    <p className="text-lg font-normal leading-snug">
-                      Autonomia sem depender de equipe grande
-                    </p>
-                  </div>
-                </div>
+              <div className="rounded-3xl bg-secondary p-6 text-white shadow-sm">
+  <div className="flex flex-col items-center gap-3 lg:flex-row lg:items-center lg:gap-4">
+    <div className="grid h-14 w-14 place-items-center shrink-0">
+      <Image src="/icone-autonomia.png" alt="" width={73} height={73} className="h-auto w-auto" />
+    </div>
+    <p className="text-lg font-normal leading-snug text-center lg:text-left">
+      Autonomia sem depender de equipe grande
+    </p>
+  </div>
+</div>
 
-              </div>
+                      </div>
+                      
             </div>
           </div>
         </FadeIn>
@@ -424,125 +417,224 @@ export default function Page() {
           </div>
         </section>
 
-      <section className="bg-base">
+    <section className="bg-base">
   <div className="container-xl py-14">
-            <h3 className="text-4xl font-extrabold text-black">Contexto do Mercado</h3>
-            
-            {/* row 1 */}
-            <FadeIn delay={0.08} y={18}>
-<div className="flex mt-8 gap-4 w-full">
-  {/* imagens */}
-  <div className="flex gap-4">
-    <Image
-      src="/grid-img-2.png"
-      alt="mulheres"
-      width={277}
-      height={384}
-      className="h-[384px] w-auto object-cover rounded-3xl"
-    />
+    <h3 className="text-4xl font-extrabold text-black">Contexto do Mercado</h3>
 
-    <Image
-      src="/grid-img-1.png"
-      alt="procedimento"
-      width={277}
-      height={384}
-      className="h-[384px] w-auto object-cover rounded-3xl"
-    />
-  </div>
+    {/* =========================
+        DESKTOP (LG+): sua versão atual
+       ========================= */}
+    <div className="hidden lg:block">
+      {/* row 1 */}
+      <FadeIn delay={0.08} y={18}>
+        <div className="mt-8 flex w-full gap-4">
+          {/* imagens */}
+          <div className="flex gap-4">
+            <Image
+              src="/grid-img-2.png"
+              alt="mulheres"
+              width={277}
+              height={384}
+              className="h-[384px] w-auto rounded-3xl object-cover"
+            />
 
-  {/* card rosa */}
-  <div className="flex flex-col gap-4 max-w-lg">
-    <div className="bg-secondary p-8 rounded-3xl flex flex-col justify-center">
-      <p className="text-white text-xl">
-        O mercado de estética segue em forte expansão no Brasil, impulsionado pela demanda
-        por cuidados com a pele e procedimentos não invasivos. (RBCP / Ipsos)
+            <Image
+              src="/grid-img-1.png"
+              alt="procedimento"
+              width={277}
+              height={384}
+              className="h-[384px] w-auto rounded-3xl object-cover"
+            />
+          </div>
+
+          {/* card rosa */}
+          <div className="flex max-w-lg flex-col gap-4">
+            <div className="flex flex-col justify-center rounded-3xl bg-secondary p-8">
+              <p className="text-xl text-white">
+                O mercado de estética segue em forte expansão no Brasil, impulsionado pela demanda
+                por cuidados com a pele e procedimentos não invasivos. (RBCP / Ipsos)
+              </p>
+            </div>
+
+            <div className="flex gap-4">
+              <div className="flex flex-col justify-center rounded-3xl bg-primary p-8">
+                <p className="text-xl text-white">
+                  O número de profissionais aumentou, tornando o setor mais competitivo e exigindo diferenciação. (RBCP)
+                </p>
+              </div>
+
+              <Image
+                src="/grid-img-3.png"
+                alt="profissional"
+                width={171}
+                height={187}
+                className="h-auto w-auto rounded-3xl object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </FadeIn>
+
+      {/* row 2 */}
+      <FadeIn delay={0.08} y={18}>
+        <div className="flex gap-4">
+          <div className="mt-4 flex h-[216px] max-w-lg flex-col justify-center rounded-3xl bg-secondary p-8">
+            <p className="text-xl text-white">
+              A faixa entre 20 e 60 anos é a que mais investe em dermatologia e prioriza confiança e vínculo acima de preço.
+              (Estética e Mercado)
+            </p>
+          </div>
+
+          <Image
+            src="/grid-img-4.png"
+            alt="tecnologia"
+            width={255}
+            height={216}
+            className="mt-4 h-auto w-auto rounded-3xl object-cover"
+          />
+
+          <div className="mt-4 flex h-[216px] max-w-lg flex-col justify-center rounded-3xl bg-secondary p-8">
+            <p className="text-xl text-white">
+              Novos tratamentos e tecnologias surgem continuamente, ampliando o interesse e a necessidade de comunicação ativa.
+              (IMARC)
+            </p>
+          </div>
+        </div>
+      </FadeIn>
+
+      {/* row 3 */}
+      <FadeIn delay={0.08} y={18}>
+        <div className="flex gap-4">
+          <Image
+            src="/grid-img-5.png"
+            alt="redes sociais"
+            width={380}
+            height={187}
+            className="mt-4 h-auto w-auto rounded-3xl object-cover"
+          />
+
+          <div className="mt-4 flex h-[187px] flex-col justify-center rounded-3xl bg-primary p-8">
+            <p className="text-xl text-white">
+              <span className="font-bold">Jovens dermatologistas são maioria nas redes sociais</span>, ocupando espaço,
+              construindo audiência e influenciando decisões de pacientes. (Levantamentos de engajamento, setor de saúde/estética)
+            </p>
+          </div>
+        </div>
+      </FadeIn>
+    </div>
+
+    {/* =========================
+        MOBILE/TABLET (<LG): versão do print (2 colunas)
+       ========================= */}
+  <div className="mt-8 space-y-4 lg:hidden">
+  {/* Row 1: img procedimento (esq) + card pink (dir) */}
+  <div className="grid gap-4 [grid-template-columns:169px_1fr]">
+    <div className="overflow-hidden rounded-3xl">
+      <Image
+        src="/grid-img-1_mobile.png"
+        alt="procedimento"
+        width={169}
+        height={84}
+        className="h-auto w-full"
+      />
+    </div>
+
+    <div className="flex items-center rounded-3xl bg-secondary p-6 text-white h-[84px]">
+      <p className="text-xs ">
+        O mercado de estética segue em forte expansão no Brasil, impulsionado pela demanda por cuidados com a pele e
+        procedimentos não invasivos. (RBCP / Ipsos)
       </p>
-                </div>
-
-                <div className="flex gap-4">
-                
-                <div className="bg-primary p-8 rounded-3xl flex flex-col justify-center">
-                  <p className="text-white text-xl">
-                    O número de profissionais aumentou, tornando o setor mais competitivo e exigindo diferenciação. (RBCP)
-
-                  </p>
-                  </div>
-
-                    <Image
-      src="/grid-img-3.png"
-      alt="procedimento"
-      width={171}
-      height={187}
-      className="h-auto w-auto object-cover rounded-3xl"
-    />
-
-                  </div>
+    </div>
   </div>
-              </div>
-              </FadeIn>
+
+  {/* Row 2: card roxo (esq) + img médica (dir) */}
+  <div className="grid gap-4 [grid-template-columns:1fr_175px] ">
+    <div className="flex items-center rounded-3xl bg-primary p-6 text-white h-[84px]">
+      <p className="text-xs">
+        O número de profissionais aumentou, tornando o setor mais competitivo e exigindo diferenciação. (RBCP)
+      </p>
+    </div>
+
+    <div className="overflow-hidden rounded-3xl">
+      <Image
+        src="/grid-img-3_mobile.png"
+        alt="profissional"
+        width={175}
+        height={84}
+        className="h-auto w-full"
+      />
+    </div>
+  </div>
+
+  {/* Row 3: img mulheres (esq) + card pink (dir) */}
+  <div className="grid gap-4 [grid-template-columns:169px_1fr]">
+    <div className="overflow-hidden rounded-3xl">
+      <Image
+        src="/grid-img-2_mobile.png"
+        alt="mulheres"
+        width={169}
+        height={84}
+        className="h-auto w-full"
+      />
+    </div>
+
+    <div className="flex items-center rounded-3xl bg-secondary p-6 text-white h-[84px]">
+      <p className="text-xs">
+        A faixa entre 20 e 60 anos é a que mais investe em dermatologia e prioriza confiança e vínculo acima de preço.
+        (Estética e Mercado)
+      </p>
+    </div>
+  </div>
+
+  {/* Row 4: card roxo (esq) + img device (dir) */}
+  <div className="grid gap-4 [grid-template-columns:1fr_169px]">
+    <div className="flex items-center rounded-3xl bg-primary p-6 text-white h-[84px]">
+      <p className="text-xs">
+        Novos tratamentos e tecnologias surgem continuamente, ampliando o interesse e a necessidade de comunicação ativa.
+        (IMARC)
+      </p>
+    </div>
+
+    <div className="overflow-hidden rounded-3xl">
+      <Image
+        src="/grid-img-4_mobile.png"
+        alt="tecnologia"
+        width={169}
+        height={84}
+        className="h-auto w-full"
+      />
+    </div>
+  </div>
+
+  {/* Row 5: img redes (esq) + card pink (dir) */}
+  <div className="grid gap-4 [grid-template-columns:169px_1fr]">
+    <div className="overflow-hidden rounded-3xl">
+      <Image
+        src="/grid-img-5_mobile.png"
+        alt="redes sociais"
+        width={169}
+        height={84}
+        className="h-auto w-full"
+      />
+    </div>
+
+    <div className="flex items-center rounded-3xl bg-secondary p-6 text-white h-[84px]">
+      <p className="text-xs">
+        <span className="font-bold">
+          Jovens dermatologistas são maioria nas redes sociais
+        </span>
+        , ocupando espaço, construindo audiência e influenciando decisões de pacientes. (Levantamentos de engajamento,
+        setor de saúde/estética)
+      </p>
+    </div>
+  </div>
+</div>
+
             
-            {/* row 2 */}
 
-          <FadeIn delay={0.08} y={18}> <div className="flex gap-4 ">
-
-              <div className="bg-secondary p-8 rounded-3xl mt-4 max-w-lg h-[216px] flex flex-col justify-center">
-                <p className="text-white text-xl">A faixa entre 20 e 60 anos é a que mais investe em dermatologia
-                  e prioriza confiança e vínculo acima de preço. (Estética e Mercado)</p>
-
-              </div>
-
-              
-                    <Image
-      src="/grid-img-4.png"
-      alt="procedimento"
-      width={255}
-      height={216}
-      className="h-auto w-auto object-cover rounded-3xl mt-4"
-              />
-              
-              <div className="bg-secondary p-8 rounded-3xl mt-4 max-w-lg h-[216px] flex flex-col justify-center">
-                <p className="text-white text-xl">
-                  Novos tratamentos e tecnologias surgem continuamente, ampliando o interesse e
-                  a necessidade de comunicação ativa. (IMARC)
-
-                </p>
-
-              </div>
-
-            </div>
-            </FadeIn>
-
-              
-            {/* row 3 */}
-
-          <FadeIn delay={0.08} y={18}> <div className="flex gap-4 ">
-
-
-              
-                    <Image
-      src="/grid-img-5.png"
-      alt="procedimento"
-      width={380}
-      height={187}
-      className="h-auto w-auto object-cover rounded-3xl mt-4"
-              />
-              
-              <div className="bg-primary p-8 rounded-3xl mt-4 h-[187px] flex flex-col justify-center flex flex-col justify-center">
-                <p className="text-white text-xl">
-                <span className="font-bold">Jovens dermatologistas são maioria nas redes sociais</span>, ocupando espaço, construindo audiência e influenciando decisões de pacientes. (Levantamentos de engajamento, setor de saúde/estética)
-
-
-                </p>
-
-              </div>
-
-            </div>
-            </FadeIn>
-
-
-  
   </div>
 </section>
+
 
 
 
@@ -558,7 +650,7 @@ export default function Page() {
         </div>
 
         {/* texto grande preto */}
-        <p className="max-w-4xl text-2xl leading-relaxed text-black">
+        <p className="max-w-4xl text-2xl sm:text-sm leading-relaxed text-black">
           {o.title}
         </p>
       </div>

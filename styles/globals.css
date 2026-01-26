@@ -8,7 +8,8 @@
   --color-base: #f5eff5;
 }
 
-html, body { height: 100%; }
+html, body { height: 100%;
+overflow-x: hidden; }
 
 body{
   @apply bg-base text-primary antialiased;
