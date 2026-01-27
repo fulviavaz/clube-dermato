@@ -650,7 +650,7 @@ export default function Page() {
         </div>
 
         {/* texto grande preto */}
-        <p className="max-w-4xl text-2xl sm:text-sm leading-relaxed text-black">
+        <p className="max-w-4xl 2xl:text-2xl xl:text-2xl lg:text-xl sm:text-sm leading-relaxed text-black">
           {o.title}
         </p>
       </div>
