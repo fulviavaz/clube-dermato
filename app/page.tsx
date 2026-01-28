@@ -526,110 +526,86 @@ export default function Page() {
     {/* =========================
         MOBILE/TABLET (<LG): versão do print (2 colunas)
        ========================= */}
-  <div className="mt-8 space-y-4 lg:hidden">
-  {/* Row 1: img procedimento (esq) + card pink (dir) */}
-  <div className="grid gap-4 [grid-template-columns:169px_1fr]">
-    <div className="overflow-hidden rounded-3xl">
-      <Image
-        src="/grid-img-1_mobile.png"
-        alt="procedimento"
-        width={169}
-        height={84}
-        className="h-auto w-full"
-      />
-    </div>
+{/* ===== CONTEXTO DO MERCADO – MOBILE ===== */}
+<div className="mt-6 space-y-4 lg:hidden">
 
-    <div className="flex items-center rounded-3xl bg-secondary p-6 text-white h-[84px]">
-      <p className="text-xs ">
-        O mercado de estética segue em forte expansão no Brasil, impulsionado pela demanda por cuidados com a pele e
-        procedimentos não invasivos. (RBCP / Ipsos)
-      </p>
-    </div>
+  {/* Item 1 */}
+  <div className="flex items-center gap-4 rounded-3xl bg-secondary p-4 text-white h-[220px]">
+    <Image
+      src="/grid-img-1_mobile.png"
+      alt="procedimento"
+      width={166}
+      height={105}
+      className="h-auto w-[166px] rounded-2xl shrink-0"
+    />
+    <p className="text-sm">
+      O mercado de estética segue em forte expansão no Brasil, impulsionado pela demanda por cuidados com a pele e
+      procedimentos não invasivos. <strong>(RBCP / Ipsos)</strong>
+    </p>
   </div>
 
-  {/* Row 2: card roxo (esq) + img médica (dir) */}
-  <div className="grid gap-4 [grid-template-columns:1fr_175px] ">
-    <div className="flex items-center rounded-3xl bg-primary p-6 text-white h-[84px]">
-      <p className="text-xs">
-        O número de profissionais aumentou, tornando o setor mais competitivo e exigindo diferenciação. (RBCP)
-      </p>
-    </div>
-
-    <div className="overflow-hidden rounded-3xl">
-      <Image
-        src="/grid-img-3_mobile.png"
-        alt="profissional"
-        width={175}
-        height={84}
-        className="h-auto w-full"
-      />
-    </div>
+  {/* Item 2 */}
+  <div className="flex items-center gap-4 rounded-3xl bg-primary p-4 text-white h-[135px]">
+    <p className="text-sm leading-relaxed flex-1">
+      O número de profissionais aumentou, tornando o setor mais competitivo e exigindo diferenciação.{" "}
+      <strong>(RBCP)</strong>
+    </p>
+    <Image
+      src="/grid-img-3_mobile.png"
+      alt="profissional"
+      width={104}
+      height={108}
+      className="h-auto w-[104px] rounded-2xl object-cover shrink-0"
+    />
   </div>
 
-  {/* Row 3: img mulheres (esq) + card pink (dir) */}
-  <div className="grid gap-4 [grid-template-columns:169px_1fr]">
-    <div className="overflow-hidden rounded-3xl">
-      <Image
-        src="/grid-img-2_mobile.png"
-        alt="mulheres"
-        width={169}
-        height={84}
-        className="h-auto w-full"
-      />
-    </div>
-
-    <div className="flex items-center rounded-3xl bg-secondary p-6 text-white h-[84px]">
-      <p className="text-xs">
-        A faixa entre 20 e 60 anos é a que mais investe em dermatologia e prioriza confiança e vínculo acima de preço.
-        (Estética e Mercado)
-      </p>
-    </div>
+  {/* Item 3 */}
+  <div className="flex items-center gap-4 rounded-3xl bg-secondary p-4 text-white h-120px">
+    <Image
+      src="/grid-img-2_mobile.png"
+      alt="mulheres"
+      width={113}
+      height={130}
+      className="h-auto w-[113px] rounded-2xl object-cover shrink-0"
+    />
+    <p className="text-sm leading-relaxed">
+      A faixa entre 20 e 60 anos é a que mais investe em dermatologia e prioriza confiança e vínculo acima de preço.{" "}
+      <strong>(Estética e Mercado)</strong>
+    </p>
   </div>
 
-  {/* Row 4: card roxo (esq) + img device (dir) */}
-  <div className="grid gap-4 [grid-template-columns:1fr_169px]">
-    <div className="flex items-center rounded-3xl bg-primary p-6 text-white h-[84px]">
-      <p className="text-xs">
-        Novos tratamentos e tecnologias surgem continuamente, ampliando o interesse e a necessidade de comunicação ativa.
-        (IMARC)
-      </p>
-    </div>
-
-    <div className="overflow-hidden rounded-3xl">
-      <Image
-        src="/grid-img-4_mobile.png"
-        alt="tecnologia"
-        width={169}
-        height={84}
-        className="h-auto w-full"
-      />
-    </div>
+  {/* Item 4 */}
+  <div className="flex items-center gap-4 rounded-3xl bg-primary p-4 text-white h-[140px]">
+    <p className="text-sm leading-relaxed flex-1">
+      Novos tratamentos e tecnologias surgem continuamente, ampliando o interesse e a necessidade de comunicação ativa.{" "}
+      <strong>(IMARC)</strong>
+    </p>
+    <Image
+      src="/grid-img-4_mobile.png"
+      alt="tecnologia"
+      width={83}
+      height={108}
+      className="h-auto w-[83px] rounded-2xl "
+    />
   </div>
 
-  {/* Row 5: img redes (esq) + card pink (dir) */}
-  <div className="grid gap-4 [grid-template-columns:169px_1fr]">
-    <div className="overflow-hidden rounded-3xl">
-      <Image
-        src="/grid-img-5_mobile.png"
-        alt="redes sociais"
-        width={169}
-        height={84}
-        className="h-auto w-full"
-      />
-    </div>
-
-    <div className="flex items-center rounded-3xl bg-secondary p-6 text-white h-[84px]">
-      <p className="text-xs">
-        <span className="font-bold">
-          Jovens dermatologistas são maioria nas redes sociais
-        </span>
-        , ocupando espaço, construindo audiência e influenciando decisões de pacientes. (Levantamentos de engajamento,
-        setor de saúde/estética)
-      </p>
-    </div>
+  {/* Item 5 */}
+  <div className="flex items-center gap-4 rounded-3xl bg-secondary p-4 text-white h-[200px]">
+    <Image
+      src="/grid-img-5_mobile.png"
+      alt="redes sociais"
+      width={81}
+      height={154}
+      className="h-auto w-[81px] rounded-2xl"
+    />
+    <p className="text-sm leading-relaxed">
+      <strong>Jovens dermatologistas são maioria nas redes sociais</strong>, ocupando espaço, construindo audiência e
+      influenciando decisões de pacientes.{" "}
+      <strong>(Levantamentos de engajamento, setor de saúde/estética)</strong>
+    </p>
   </div>
+
 </div>
-
             
 
   </div>
