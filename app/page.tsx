@@ -128,7 +128,7 @@ export default function Page() {
 
       <main className="flex-1 bg-white">
       <section className="container-xl py-16">
-  <h2 className="text-center text-4xl font-extrabold text-black">Quem já faz parte</h2>
+  <h2 className="text-center text-4xl sm:text-2xl font-extrabold text-black">Quem já faz parte</h2>
   <p className="mt-1 text-center text-lg text-black">
     Dermatologistas que apostam em uma experiência mais organizada e personalizada.
   </p>
@@ -169,9 +169,9 @@ export default function Page() {
       <div className="lg:col-span-4 w-full">
         <FadeIn delay={0.1}>
           <div className="w-full">
-            <h3 className="text-4xl font-extrabold text-black">
-              Por que é bom para sua clínica
-            </h3>
+          <h3 className="text-4xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-black">
+  Por que é bom para sua clínica
+</h3>
 
             <p className="mt-3 text-lg leading-relaxed text-black">
               O Club Dermato Care permite criar e gerenciar campanhas de forma estratégica,
@@ -596,7 +596,7 @@ export default function Page() {
       alt="redes sociais"
       width={81}
       height={154}
-      className="h-auto w-[81px] rounded-2xl"
+      className="h-[154px] w-[81px] rounded-2xl"
     />
     <p className="text-sm leading-relaxed">
       <strong>Jovens dermatologistas são maioria nas redes sociais</strong>, ocupando espaço, construindo audiência e
@@ -615,7 +615,7 @@ export default function Page() {
 
 
       <section className="container-xl py-14" id="demonstracao">
-  <h3 className="text-5xl font-extrabold text-black">Oportunidades</h3>
+  <h3 className="text-4xl font-extrabold text-black">Oportunidades</h3>
 
   <FadeIn delay={0.08} y={18}><div className="mt-10 space-y-14">
     {opportunities.map((o) => (
@@ -626,7 +626,7 @@ export default function Page() {
         </div>
 
         {/* texto grande preto */}
-        <p className="max-w-4xl 2xl:text-2xl xl:text-2xl lg:text-xl sm:text-sm leading-relaxed text-black">
+        <p className="max-w-4xl 2xl:text-2xl xl:text-2xl lg:text-xl sm:text-xl  text-black">
           {o.title}
         </p>
       </div>
@@ -638,7 +638,7 @@ export default function Page() {
   <div className="mt-14">
     <a
       href="#suporte"
-      className="block w-full rounded-full bg-primary py-5 text-center text-xl font-extrabold tracking-widest text-base"
+      className="block w-full rounded-full bg-primary py-5 text-center text-xl sm:text-lg font-extrabold tracking-widest text-base"
     >
       SOLICITE UMA DEMONSTRAÇÃO
     </a>
