@@ -1,4 +1,4 @@
-// File: C:\Users\fulvi\Desktop\INDICO\LP's\club-dermato-care-landing\app\layout.tsx
+// File: C:\Users\Fúlvia\Documents\DEV\INDICO\LP's\club-dermato-care-landing\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -11,11 +11,11 @@ type PatientSlide = {
 };
 
 const patientSlides: PatientSlide[] = [
-  {
-    title: "PERFIL/NÍVEL/PONTOS",
-    desc: "Menu completo com informações para os usuários consultarem sobre seu perfil, nível alcançado e pontuação acumulada.",
-    image: "/mobile.png",
-  },
+  // {
+  //   title: "PERFIL/NÍVEL/PONTOS",
+  //   desc: "Menu completo com informações para os usuários consultarem sobre seu perfil, nível alcançado e pontuação acumulada.",
+  //   image: "/mobile.png",
+  // },
   {
     title: "PROGRESSO DE TRATAMENTOS",
     desc: "A paciente pode visualizar quanto falta para completar seu tratamento ou pacote de sessões.",

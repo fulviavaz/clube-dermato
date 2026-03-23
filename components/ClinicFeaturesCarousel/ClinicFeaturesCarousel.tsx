@@ -12,12 +12,12 @@ const slides = [
     image: "/cadastro-clientes.png",
   },
   // duplicado enquanto não tem os outros
-  {
-    eyebrow: "CONFIGURAÇÃO DE NÍVEIS E PONTOS",
-    text:
-      "Permite acompanhar a evolução dos clientes no programa, visualizar a pontuação acumulada e identificar quem está próximo de alcançar novos níveis e recompensas.",
-    image: "/config-niveis-pontos.png",
-  },
+  // {
+  //   eyebrow: "CONFIGURAÇÃO DE NÍVEIS E PONTOS",
+  //   text:
+  //     "Permite acompanhar a evolução dos clientes no programa, visualizar a pontuação acumulada e identificar quem está próximo de alcançar novos níveis e recompensas.",
+  //   image: "/config-niveis-pontos.png",
+  // },
   {
     eyebrow: "CONFIGURAÇÃO DO CATÁLOGO DE SEVIÇOS E PRODUTOS",
     text:
@@ -89,7 +89,7 @@ export default function Page() {
       {/* ... seu resto da página ... */}
 
       <section className="container-xl pb-14">
-        <h3 className="text-4xl font-extrabold text-black">Features para a clínica</h3>
+        <h3 className="text-4xl font-extrabold text-black">Para a clínica</h3>
 
         <div className="relative mt-6 rounded-[36px] bg-[#f1e8ef] p-10 shadow-sm ring-1 ring-primary/10 overflow-visible">
           {/* setas */}

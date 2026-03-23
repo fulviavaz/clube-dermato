@@ -38,6 +38,19 @@ const opportunities = [
   },
 ];
 
+const logos = [
+  { src: "/logo-renata.png", alt: "Renata Mitelman" },
+  { src: "/viviane_logo.png", alt: "Viviane reis" },
+  { src: "/valentina_logo.png", alt: "Valentina" },
+  { src: "/specialite_logo.png", alt: "Specialité" },
+  { src: "/isabela_logo.png", alt: "Isabela" },
+  { src: "/flavia_logo.png", alt: "Flávia" },
+  { src: "/kemia.png", alt: "Kemia" },
+  { src: "/monica.png", alt: "Mônica" },
+];
+
+const marqueeLogos = [...logos, ...logos];
+
 export default function Page() {
   return (
     <div className="min-h-dvh flex flex-col bg-base text-primary">
@@ -85,14 +98,13 @@ export default function Page() {
 
         <FadeIn delay={0.28}>
           <h1 className="text-3xl text-center text-black font-extrabold tracking-tight sm:text-4xl">
-            Automação de marketing <br className="hidden sm:block" />
-            para clínicas dermatológicas
+          Fidelize seus clientes
           </h1>
         </FadeIn>
 
         <FadeIn delay={0.38}>
           <p className="mt-3 max-w-prose text-lg leading-relaxed text-black text-center">
-            Crie campanhas exclusivas, reative os clientes da sua base e venda mais.
+            Programa de relacionamento e automação de marketing de fácil gestão. 
           </p>
         </FadeIn>
 
@@ -135,28 +147,24 @@ export default function Page() {
 
   <div className="relative mt-10 overflow-hidden">
     {/* faixa animada (1 linha) */}
-    <div className="marquee flex flex-nowrap items-center gap-6">
-      {Array.from({ length: 10 }).flatMap((_, i) => [
-        <div key={`a-${i}`} className="shrink-0 rounded-lg bg-[#f1e8ef] px-2 py-2 shadow-sm">
-          <Image
-            src="/logo-renata.png"
-            alt="Renata Mitelman"
-            width={210}
-            height={52}
-            className="block h-[52px] w-auto object-contain"
-          />
-        </div>,
-        <div key={`b-${i}`} className="shrink-0 rounded-lg bg-[#f1e8ef] px-2 py-2 shadow-sm">
-          <Image
-            src="/logo-renata.png"
-            alt="Renata Mitelman"
-            width={210}
-            height={52}
-            className="block h-[52px] w-auto object-contain"
-          />
-        </div>,
-      ])}
-    </div>
+<div className="relative mt-10 overflow-hidden">
+  <div className="marquee flex flex-nowrap items-center gap-6">
+    {marqueeLogos.map((logo, i) => (
+      <div
+        key={i}
+        className="shrink-0 rounded-lg bg-[#f1e8ef] px-3 py-2 shadow-sm"
+      >
+        <Image
+          src={logo.src}
+          alt={logo.alt}
+          width={210}
+          height={52}
+          className="block h-[52px] w-auto object-contain"
+        />
+      </div>
+    ))}
+  </div>
+</div>
   </div>
 </section>
 
@@ -364,7 +372,7 @@ export default function Page() {
   <div className="container-xl py-16">
     {/* título fora do card */}
       <FadeIn delay={0.08} y={18} ><h3 className="text-4xl font-extrabold text-black">
-      Features para o paciente
+      Para o paciente
     </h3>
 
     <p className="mt-4 pb-14 text-xl leading-relaxed text-black">
