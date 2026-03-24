@@ -646,7 +646,7 @@ export default function Page() {
   <div className="mt-14">
     <a
       href="#suporte"
-      className="block w-full rounded-full bg-primary py-5 text-center  font-extrabold tracking-widest text-base"
+      className="block w-full rounded-full bg-primary py-5 px-8 text-center  font-extrabold tracking-widest text-base"
     >
       SOLICITE UMA DEMONSTRAÇÃO
     </a>
