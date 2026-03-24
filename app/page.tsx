@@ -14,10 +14,10 @@ const clinicCards = [
 ];
 
 const marketingSteps = [
-  { title: "Criar campanhas profissionais em minutos", icon: "/icone-criar-campanhas.png" },
-  { title: "Manter presença digital diária", icon: "/icone-manter-presenca.png" },
-  { title: "Aumentar visibilidade e autoridade", icon: "/icone-aumente-visibilidade.png" },
-  { title: "Receber conteúdo pensado para quem cuida da pele", icon: "/icone-receber-conteudos.png" },
+  { title: "Crie campanhas profissionais em minutos ", icon: "/icone-criar-campanhas.png" },
+  { title: "Mantenha presença digital diária", icon: "/icone-manter-presenca.png" },
+  { title: "Aumente visibilidade e autoridade", icon: "/icone-aumente-visibilidade.png" },
+  { title: "Receba conteúdos pensados para quem cuida da pele", icon: "/icone-receber-conteudos.png" },
 ];
 
 const opportunities = [
@@ -309,7 +309,7 @@ export default function Page() {
         Facilidade é a palavra chave
       </h3>
       <p className="mt-1 text-lg text-black">
-        Impulsionando seu marketing com poucos cliques
+        Impulsione seu marketing com poucos cliques:
       </p>
     </div>
   </FadeIn>
@@ -622,7 +622,7 @@ export default function Page() {
 
 
 
-      <section className="container-xl py-14" id="demonstracao">
+      <section className="container-xl py-14 sm:flex sm:flex-col sm:items-center" id="demonstracao">
   <h3 className="text-4xl font-extrabold text-black">Oportunidades</h3>
 
   <FadeIn delay={0.08} y={18}><div className="mt-10 space-y-14">
@@ -646,7 +646,7 @@ export default function Page() {
   <div className="mt-14">
     <a
       href="#suporte"
-      className="block w-full rounded-full bg-primary py-5 text-center text-xl sm:text-lg font-extrabold tracking-widest text-base"
+      className="block w-full rounded-full bg-primary py-5 text-center  font-extrabold tracking-widest text-base"
     >
       SOLICITE UMA DEMONSTRAÇÃO
     </a>
