@@ -123,6 +123,7 @@ export default function Page() {
             <div className="lg:col-span-6">
               <FadeIn delay={0.22} y={16}>
                 <div className="relative overflow-hidden rounded-3xl">
+
                   <Image
                     src="/image-hero.png"
                     alt="Imagem do hero"
