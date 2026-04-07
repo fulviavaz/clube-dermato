@@ -1272,10 +1272,6 @@ video {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1489,21 +1485,9 @@ body {
     line-height: 2.5rem;
   }
 
-  .sm\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .sm\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    --tw-text-opacity: 1;
-    color: rgb(245 239 245 / var(--tw-text-opacity));
   }
 }
 
