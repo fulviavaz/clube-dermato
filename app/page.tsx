@@ -111,7 +111,7 @@ export default function Page() {
               <FadeIn delay={0.48}>
                 <div className="mt-6">
                   <a
-                    href="https://w.app/le7hf0" target="_blank"
+                    href="https://wa.me/5511951682463?text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Club%20Dermato%20Care." target="_blank"
                     className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-bold tracking-widest text-base shadow-sm hover:opacity-95"
                   >
                     CONHEÇA A FERRAMENTA
@@ -646,7 +646,7 @@ export default function Page() {
           {/* CTA grande */}
           <div className="mt-14">
             <a
-              href="https://w.app/le7hf0" target="_blank"
+              href="https://wa.me/5511951682463?text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Club%20Dermato%20Care." target="_blank"
               className="block w-full rounded-full bg-primary py-5 px-8 text-center  font-extrabold tracking-widest text-base"
             >
               SOLICITE UMA DEMONSTRAÇÃO

@@ -19,7 +19,7 @@ const patientSlides: PatientSlide[] = [
   {
     title: "PROGRESSO DE TRATAMENTOS",
     desc: "A paciente pode visualizar quanto falta para completar seu tratamento ou pacote de sessões.",
-    image: "/progresso.png",
+    image: "/progresso-tratamentos.png",
   },
   {
     title: "CARTELA COMPLETOU GANHOU",
@@ -39,12 +39,12 @@ const patientSlides: PatientSlide[] = [
   {
     title: "COMPRA DE SERVIÇOS E PRODUTOS",
     desc: "Acesso a todos os serviços, tratamentos e produtos oferecidos pela clínica de forma simples e prática.",
-    image: "/compra-servicos.png",
+    image: "/compra-servicos-produtos.png",
   },
   {
     title: "CLUBE DE BENEFÍCIOS",
     desc: "Área dedicada aos benefícios disponíveis para cada paciente, conforme seu nível ou campanhas ativas.",
-    image: "/club-beneficios.png",
+    image: "/clube-beneficios.png",
   },
   {
     title: "GIFTCARD",
@@ -59,7 +59,7 @@ const patientSlides: PatientSlide[] = [
   {
     title: "CONTEÚDO BLOG",
     desc: "Blog com assuntos informativos sobre o universo da beleza e dos cuidados dermatológicos.",
-    image: "/blog.png",
+    image: "/conteudo-blog.png",
   },
 ];
 
