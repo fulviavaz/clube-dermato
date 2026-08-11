@@ -8,7 +8,7 @@ const slides = [
   {
     eyebrow: "CADASTRO DE CLIENTES",
     text:
-      "Centraliza o registro e gerenciamento dos pacientes da clínica, permitindo acompanhar perfis, histórico de participação, níveis, pontos e engajamento nas campanhas.",
+      "Centraliza o registro e gerenciamento dos pacientes da clínica, permitindo acompanhar perfis, histórico de participação e engajamento nas campanhas.",
     image: "/cadastro-clientes.png",
   },
   // duplicado enquanto não tem os outros

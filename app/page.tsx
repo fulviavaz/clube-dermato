@@ -664,7 +664,7 @@ export default function Page() {
 
           <address className="not-italic text-lg leading-relaxed text-base/90">
             <strong>GT MARKETING DIRETO EIRELI</strong> <br />
-            Rua jose Ramon Urtiza 209 bloco A, CEP 05717-250, inscrita no CNPJ/MF sob o número 34.650.034/0001-43
+            Rua José Ramon Urtiza, 209 - Bloco A, CEP 05717-250, inscrita no CNPJ/MF sob o número 34.650.034/0001-43
           </address>
         </div>
       </footer>

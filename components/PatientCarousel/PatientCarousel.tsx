@@ -22,13 +22,13 @@ const patientSlides: PatientSlide[] = [
     image: "/progresso-tratamentos.png",
   },
   {
-    title: "CARTELA COMPLETOU GANHOU",
-    desc: "Assim que completar uma quantidade X de procedimentos na clínica, a paciente ganha uma porcentagem de desconto em uma consulta ou tratamento.",
+    title: "CARTELA DE VISITAS",
+    desc: "Assim que completar uma quantidade x de engajamento com sua jornada de autocuidado, a paciente pode ganhar um desconto em procedimentos não estéticos.",
     image: "/cartela.png",
   },
   {
-    title: "VAQUINHA",
-    desc: "Possibilidade de criação de uma vaquinha própria para pacientes que necessitam de auxílio financeiro para realizar um tratamento.",
+    title: "APOIO AO AUTOCUIDADO",
+    desc: "Possibilidade de criação de uma vaquinha própria para pacientes que necessitam de auxílio financeiro para realizar um tratamento não médico.",
     image: "/vaquinha.png",
   },
   {
@@ -38,7 +38,7 @@ const patientSlides: PatientSlide[] = [
   },
   {
     title: "COMPRA DE SERVIÇOS E PRODUTOS",
-    desc: "Acesso a todos os serviços, tratamentos e produtos oferecidos pela clínica de forma simples e prática.",
+    desc: "Acesso a todos os serviços não médicos, tratamentos e produtos oferecidos pela clínica de forma simples e prática.",
     image: "/compra-servicos-produtos.png",
   },
   {
@@ -47,13 +47,13 @@ const patientSlides: PatientSlide[] = [
     image: "/clube-beneficios.png",
   },
   {
-    title: "GIFTCARD",
-    desc: "Gift Card para incentivar clientes a voltarem à clínica e realizarem outros tratamentos. A paciente também pode presentear outra pessoa com o gift card, auxiliando na atração de novos clientes.",
+    title: "CARTÃO DE AUTOCUIDADO",
+    desc: "Cartão de autocuidado (Giftcard) para presentear pessoas com tratamentos não médicos na clinica. Incentivam clientes a voltarem e ajuda a atrair novos clientes.",
     image: "/giftcard.png",
   },
   {
-    title: "INDICAÇÃO",
-    desc: "Ao indicar uma pessoa e ela realizar um procedimento, a paciente ganha um desconto ou uma cortesia.",
+    title: "COMPARTILHE SAÚDE",
+    desc: "Ao indicar uma pessoa para acompanhar as novidades da clinica, os conteúdos postados a cliente pode ganhar benefícios em tratamentos não médicos.",
     image: "/indicacao.png",
   },
   {

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "../styles/globals.css";
 
-
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
@@ -11,17 +10,20 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: "Club Dermato Care",
-  description: "Landing page do Club Dermato Care",
+  description: "Programa de relacionamento e automação de marketing de fácil gestão.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
-
-
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${roboto.className} min-h-dvh`}>{children}</body>
+      <body className={`${roboto.className} min-h-dvh`}>
+        {children}
+      </body>
     </html>
   );
 }
