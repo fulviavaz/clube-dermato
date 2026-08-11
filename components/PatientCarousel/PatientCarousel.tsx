@@ -23,7 +23,7 @@ const patientSlides: PatientSlide[] = [
   },
   {
     title: "CARTELA DE VISITAS",
-    desc: "Assim que completar uma quantidade x de engajamento com sua jornada de autocuidado, a paciente pode ganhar um desconto em procedimentos não estéticos.",
+    desc: "Assim que completar uma quantidade x de engajamento com sua jornada de autocuidado, a paciente pode ganhar um desconto em procedimentos não médicos.",
     image: "/cartela.png",
   },
   {
