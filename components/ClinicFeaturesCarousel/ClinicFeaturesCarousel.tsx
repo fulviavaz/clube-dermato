@@ -21,13 +21,13 @@ const slides = [
   {
     eyebrow: "CONFIGURAÇÃO DO CATÁLOGO DE SEVIÇOS E PRODUTOS",
     text:
-      "Mostra o interesse dos clientes pelos itens do catálogo, facilitando a análise de acessos, compras e preferências em tratamentos e produtos.",
+      "Mostra o interesse dos pacientes pelos itens do catálogo, facilitando a análise de acessos, compras e preferências em tratamentos e produtos.",
     image: "/config-catalogo.png",
   },
   {
     eyebrow: "HABILITAÇÃO DO CONTEÚDO BLOG",
     text:
-      "Centraliza a ativação e visualização dos conteúdos disponibilizados no blog, permitindo acompanhar o acesso dos clientes e o interesse pelos temas de cuidado dermatológico.",
+      "Centraliza a ativação e visualização dos conteúdos disponibilizados no blog, permitindo acompanhar o acesso dos pacientes e o interesse pelos temas de cuidado dermatológico.",
     image: "/hab-blog.png",
   },
   {
@@ -51,7 +51,7 @@ const slides = [
   {
     eyebrow: "PAINEL DE ANÁLISE PARA CONTROLE DE CAMPANHAS",
     text:
-      "Reúne indicadores essenciais de desempenho, como abertura de e-mails, cliques, acessos ao portal, uso de benefícios, perfil dos clientes e evolução das ações de marketing.",
+      "Reúne indicadores essenciais de desempenho, como abertura de e-mails, cliques, acessos ao portal, uso de benefícios, perfil dos pacientes e evolução das ações de marketing.",
     image: "/painel-analise.png",
   },
   {

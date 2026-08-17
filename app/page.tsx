@@ -98,7 +98,7 @@ export default function Page() {
 
               <FadeIn delay={0.28}>
                 <h1 className="text-3xl text-center text-black font-extrabold tracking-tight sm:text-4xl">
-                  Fidelize seus clientes
+                  Fidelize seus pacientes
                 </h1>
               </FadeIn>
 
@@ -377,7 +377,7 @@ export default function Page() {
             </h3>
 
               <p className="mt-4 pb-14 text-xl leading-relaxed text-black">
-                As funcionalidades destinadas aos clientes oferecem uma jornada mais organizada e engajada,
+                As funcionalidades destinadas aos pacientes oferecem uma jornada mais organizada e engajada,
                 reunindo recursos que facilitam o acompanhamento de tratamentos, o acesso a benefícios e a
                 interação direta com a clínica.
               </p></FadeIn>
@@ -547,7 +547,7 @@ export default function Page() {
                   height={105}
                   className="h-auto w-[166px] rounded-2xl shrink-0"
                 />
-                <p className="text-sm">
+                <p className="text-xs ">
                   O mercado de estética segue em forte expansão no Brasil, impulsionado pela demanda por cuidados com a pele e
                   procedimentos não invasivos. <strong>(RBCP / Ipsos)</strong>
                 </p>
@@ -555,7 +555,7 @@ export default function Page() {
 
               {/* Item 2 */}
               <div className="flex items-center gap-4 rounded-3xl bg-primary p-4 text-white h-[135px]">
-                <p className="text-sm leading-relaxed flex-1">
+                <p className="text-xs leading-relaxed flex-1">
                   O número de profissionais aumentou, tornando o setor mais competitivo e exigindo diferenciação.{" "}
                   <strong>(RBCP)</strong>
                 </p>
@@ -577,7 +577,7 @@ export default function Page() {
                   height={130}
                   className="h-auto w-[113px] rounded-2xl object-cover shrink-0"
                 />
-                <p className="text-sm leading-relaxed">
+                <p className="text-xs leading-relaxed">
                   A faixa entre 20 e 60 anos é a que mais investe em dermatologia e prioriza confiança e vínculo acima de preço.{" "}
                   <strong>(Estética e Mercado)</strong>
                 </p>
@@ -585,7 +585,7 @@ export default function Page() {
 
               {/* Item 4 */}
               <div className="flex items-center gap-4 rounded-3xl bg-primary p-4 text-white h-[140px]">
-                <p className="text-sm leading-relaxed flex-1">
+                <p className="text-xs leading-relaxed flex-1">
                   Novos tratamentos e tecnologias surgem continuamente, ampliando o interesse e a necessidade de comunicação ativa.{" "}
                   <strong>(IMARC)</strong>
                 </p>
@@ -607,7 +607,7 @@ export default function Page() {
                   height={154}
                   className="h-[154px] w-[81px] rounded-2xl"
                 />
-                <p className="text-sm leading-relaxed">
+                <p className="text-xs leading-relaxed">
                   <strong>Jovens dermatologistas são maioria nas redes sociais</strong>, ocupando espaço, construindo audiência e
                   influenciando decisões de pacientes.{" "}
                   <strong>(Levantamentos de engajamento, setor de saúde/estética)</strong>

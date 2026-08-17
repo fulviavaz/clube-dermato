@@ -48,7 +48,7 @@ const patientSlides: PatientSlide[] = [
   },
   {
     title: "CARTÃO DE AUTOCUIDADO",
-    desc: "Cartão de autocuidado (Giftcard) para presentear pessoas com tratamentos não médicos na clínica. Incentiva clientes a voltarem e ajuda a atrair novos.",
+    desc: "Cartão de autocuidado (Giftcard) para presentear pessoas com tratamentos não médicos na clínica. Incentiva pacientes a voltarem e ajuda a atrair novos.",
     image: "/giftcard.png",
   },
   {
