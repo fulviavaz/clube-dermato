@@ -345,7 +345,7 @@ export default function Page() {
           <FadeIn delay={0.08} y={18}>
             <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
               <div className="lg:col-span-6">
-                <h3 className="text-4xl font-extrabold text-black">Por que é bom para o seu cliente</h3>
+                <h3 className="text-4xl font-extrabold text-black">Por que é bom para o seu paciente</h3>
                 <ul className="mt-4 space-y-2 text-lg text-black">
                   <li>• Comunicação mais clara e consistente;</li>
                   <li>• Acesso fácil a informações;</li>
@@ -413,7 +413,7 @@ export default function Page() {
               </FadeIn>
             </div>
             <div className="lg:col-span-7 ">
-              <FadeIn delay={0.08} y={18}> <h4 className="text-4xl font-extrabold text-black">Tipos de benefícios que o cliente vai encontrar</h4>
+              <FadeIn delay={0.08} y={18}> <h4 className="text-4xl font-extrabold text-black">Tipos de benefícios que o paciente vai encontrar</h4>
                 <p className="mt-3 text-xl leading-relaxed text-black">
                   Uma experiência clara e fácil: conteúdos organizados, jornada transparente, acesso rápido
                   ao que precisa e uma comunicação mais humana.

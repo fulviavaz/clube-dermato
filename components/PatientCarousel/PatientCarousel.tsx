@@ -53,7 +53,7 @@ const patientSlides: PatientSlide[] = [
   },
   {
     title: "COMPARTILHE SAÚDE",
-    desc: "Ao indicar uma pessoa para acompanhar as novidades e os conteúdos da clínica, a cliente pode ganhar benefícios em tratamentos não médicos.",
+    desc: "Ao indicar uma pessoa para acompanhar as novidades e os conteúdos da clínica, a paciente pode ganhar benefícios em tratamentos não médicos.",
     image: "/indicacao.png",
   },
   {

@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const slides = [
   {
-    eyebrow: "CADASTRO DE CLIENTES",
+    eyebrow: "CADASTRO DE PACIENTES",
     text:
       "Centraliza o registro e gerenciamento dos pacientes da clínica, permitindo acompanhar perfis, histórico de participação e engajamento nas campanhas.",
     image: "/cadastro-clientes.png",
