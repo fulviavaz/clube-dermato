@@ -539,7 +539,7 @@ export default function Page() {
             <div className="mt-6 space-y-4 lg:hidden">
 
               {/* Item 1 */}
-              <div className="flex items-center gap-4 rounded-3xl bg-secondary p-4 text-white h-[220px]">
+              <div className="flex items-center gap-2 rounded-3xl bg-secondary p-2 text-white h-[220px]">
                 <Image
                   src="/grid-img-1_mobile.png"
                   alt="procedimento"
@@ -554,7 +554,7 @@ export default function Page() {
               </div>
 
               {/* Item 2 */}
-              <div className="flex items-center gap-4 rounded-3xl bg-primary p-4 text-white h-[135px]">
+              <div className="flex items-center gap-2 rounded-3xl bg-primary p-2 text-white h-[135px]">
                 <p className="text-xs leading-relaxed flex-1">
                   O número de profissionais aumentou, tornando o setor mais competitivo e exigindo diferenciação.{" "}
                   <strong>(RBCP)</strong>
@@ -569,7 +569,7 @@ export default function Page() {
               </div>
 
               {/* Item 3 */}
-              <div className="flex items-center gap-4 rounded-3xl bg-secondary p-4 text-white h-120px">
+              <div className="flex items-center gap-2 rounded-3xl bg-secondary p-2 text-white h-120px">
                 <Image
                   src="/grid-img-2_mobile.png"
                   alt="mulheres"
@@ -584,7 +584,7 @@ export default function Page() {
               </div>
 
               {/* Item 4 */}
-              <div className="flex items-center gap-4 rounded-3xl bg-primary p-4 text-white h-[140px]">
+              <div className="flex items-center gap-2 rounded-3xl bg-primary p-2 text-white h-[140px]">
                 <p className="text-xs leading-relaxed flex-1">
                   Novos tratamentos e tecnologias surgem continuamente, ampliando o interesse e a necessidade de comunicação ativa.{" "}
                   <strong>(IMARC)</strong>
@@ -599,7 +599,7 @@ export default function Page() {
               </div>
 
               {/* Item 5 */}
-              <div className="flex items-center gap-4 rounded-3xl bg-secondary p-4 text-white h-[200px]">
+              <div className="flex items-center gap-2 rounded-3xl bg-secondary p-2 text-white h-[200px]">
                 <Image
                   src="/grid-img-5_mobile.png"
                   alt="redes sociais"
